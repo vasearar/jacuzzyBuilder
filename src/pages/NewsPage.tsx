@@ -1,5 +1,5 @@
 "use client";
-
+import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import * as Select from "@radix-ui/react-select";
@@ -188,8 +188,8 @@ const NewsPage = () => {
       <div className="col-span-full container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 col-span-full">
           {shown.map((item) => (
-            <a
-              href="#"
+            <Link
+              to={`/news/${item.id}`}
               key={item.id}
               className="col-span-1 rounded-2xl small-shadow overflow-hidden bg-white"
             >
@@ -209,7 +209,7 @@ const NewsPage = () => {
                 <h3 className="mt-3 mb-4 line-clamp-2">{item.title}</h3>
                 <p className="text-[#3F3F40] line-clamp-3 mb-4">{item.text}</p>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import NewsPage from "./pages/NewsPage";
+import NewsDetail from "./pages/NewsDetail";
 import Documents from "./pages/Documents.tsx";
 import Members from "./pages/Members";
 import Contact from "./pages/Contact";
@@ -12,6 +13,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<NewsPage />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/documents" element={<Documents />} />
         <Route path="/members" element={<Members />} />
         <Route path="/contact" element={<Contact />} />

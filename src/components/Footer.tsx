@@ -8,67 +8,102 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-[#f1f1f1] py-10 mt-28 border-y border-[#BDBFC0]">
-        <div className="grid grid-cols-full container mx-auto px-4">
-          <div className="col-span-4">
-            <div className="flex gap-3 items-center">
+        <div className="grid grid-cols-full gap-y-8">
+          <div className="col-span-full md:col-span-6 lg:col-span-4">
+            <div className="flex gap-3 items-center justify-start">
               <Logo />
               <span className="font-medium">{t("logoText")}</span>
             </div>
-            <p className="text-[#3F3F40] mt-4">{t("textUnderLogo")}</p>
+            <p className="text-[#3F3F40] mt-4 text-left">
+              {t("textUnderLogo")}
+            </p>
           </div>
 
-          <ul className="flex flex-col col-span-2 col-start-6 gap-2">
-            <li className="font-medium mb-4">{t("quickLinks")}</li>
-            <li>
-              <NavLink to="/contact">{t("contact")}</NavLink>
-            </li>
-            <li>
-              <NavLink to="/documents">{t("documents")}</NavLink>
-            </li>
-            <li>
-              <NavLink to="/members">{t("members")}</NavLink>
-            </li>
-            <li>
-              <NavLink to="/news">{t("news")}</NavLink>
-            </li>
-          </ul>
+          <nav
+            aria-label="Quick links"
+            className="col-span-full sm:col-span-4 md:col-span-3 md:col-start-7 lg:col-span-2 lg:col-start-6"
+          >
+            <ul className="flex flex-col gap-2 items-start">
+              <li className="font-medium mb-2 sm:mb-4">{t("quickLinks")}</li>
+              <li>
+                <NavLink
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  to="/contact"
+                >
+                  {t("contact")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  to="/documents"
+                >
+                  {t("documents")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  to="/members"
+                >
+                  {t("members")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  to="/news"
+                >
+                  {t("news")}
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
 
-          <ul className="flex flex-col col-span-3 col-start-9 gap-2">
-            <li className="font-medium mb-4">{t("contactCategory")}</li>
-            <li>{t("address")}</li>
-            <li>{t("phone")}</li>
-            <li>
-              <a
-                href="mailto:contact@anv.md"
-                className="hover:text-[#5F9CFF] transition-colors"
-              >
-                {t("email")}
-              </a>
-            </li>
-            <li className="flex gap-3">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-[#5F9CFF]"
-              >
-                {t("facebook")}
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-[#5F9CFF]"
-              >
-                {t("instagram")}
-              </a>
-            </li>
-          </ul>
+          <div className="col-span-full sm:col-span-4 md:col-span-3 md:col-start-10">
+            <ul className="flex flex-col gap-2 items-start">
+              <li className="font-medium mb-2 sm:mb-4">
+                {t("contactCategory")}
+              </li>
+              <li className="text-left">{t("address")}</li>
+              <li className="text-left">{t("phone")}</li>
+              <li>
+                <a
+                  href="mailto:contact@anv.md"
+                  className="hover:text-[#5F9CFF] transition-colors"
+                >
+                  {t("email")}
+                </a>
+              </li>
+              <li className="flex gap-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="hover:text-[#5F9CFF] transition-colors"
+                >
+                  {t("facebook")}
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="hover:text-[#5F9CFF] transition-colors"
+                >
+                  {t("instagram")}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="grid grid-cols-full place-items-center">
-        <p className="col-span-full text-[#3F3F40] py-6">{t("copyright")}</p>
+        <p className="col-span-full text-[#3F3F40] py-6 text-center">
+          {t("copyright")}
+        </p>
       </div>
     </footer>
   );

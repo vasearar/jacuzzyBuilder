@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
 
   return (
     <Select.Root value={current} onValueChange={changeLang}>
-      <Select.Trigger className="inline-flex items-center z-50 gap-2 px-3 py-2 rounded-2xl border border-gray-300 bg-white text-sm outline-none focus:ring-2 focus:ring-[#5F9CFF]">
+      <Select.Trigger className="inline-flex items-center z-50 gap-2 px-4 py-3 rounded-2xl border border-gray-300 bg-white text-sm outline-none focus:ring-2 focus:ring-[#5F9CFF]">
         <Select.Value />
         <Select.Icon>
           <ChevronDown className="w-4 h-4" />
@@ -32,7 +32,7 @@ export default function LanguageSwitcher() {
       </Select.Trigger>
 
       <Select.Portal>
-        <Select.Content className="overflow-hidden z-20 rounded-2xl border border-gray-200 bg-white shadow-lg">
+        <Select.Content className="overflow-hidden z-50 rounded-2xl border border-gray-200 bg-white shadow-lg">
           <Select.Viewport className="p-1">
             {LANGS.map(({ code, label }) => (
               <Select.Item

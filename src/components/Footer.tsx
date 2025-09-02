@@ -65,8 +65,33 @@ const Footer = () => {
               <li className="font-medium mb-2 sm:mb-4">
                 {t("contactCategory")}
               </li>
-              <li className="text-left">{t("address")}</li>
-              <li className="text-left">{t("phone")}</li>
+              <li className="text-left">
+                {" "}
+                <a
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  href="https://maps.app.goo.gl/KRZnLuo4uQdkuDkm6"
+                >
+                  {t("address")}
+                </a>
+              </li>
+              <li className="text-left">
+                {" "}
+                <a
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  href="tel:+37369195884"
+                >
+                  {t("phone")}
+                </a>
+              </li>
+              <li className="text-left">
+                {" "}
+                <a
+                  className="hover:text-[#5F9CFF] transition-colors"
+                  href="fax:+37322992235"
+                >
+                  {t("fax")}
+                </a>
+              </li>
               <li>
                 <a
                   href="mailto:contact@anv.md"
@@ -77,7 +102,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/anvmd"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -86,7 +111,7 @@ const Footer = () => {
                   {t("facebook")}
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/anv_md/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"

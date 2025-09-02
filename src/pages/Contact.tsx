@@ -17,12 +17,16 @@ const Contact = () => {
             dangerouslySetInnerHTML={{ __html: t("phone") }}
             className="mb-2"
           />
+          <p
+            dangerouslySetInnerHTML={{ __html: t("fax") }}
+            className="mb-2"
+          />
           <p dangerouslySetInnerHTML={{ __html: t("mail") }} className="mb-2" />
           <div className="flex flex-wrap gap-3">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/anvmd"
               className="underline underline-offset-2 hover:opacity-80"
             >
               Facebook
@@ -30,7 +34,7 @@ const Contact = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/anv_md/"
               className="underline underline-offset-2 hover:opacity-80"
             >
               Instagram
@@ -65,7 +69,7 @@ const Contact = () => {
         <div className="col-span-1">
           <div className="relative w-full h-full aspect-square lg:aspect-auto rounded-2xl overflow-hidden small-shadow">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1613.9734393308527!2d28.860144667861764!3d46.995967983891035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97eab9e825bcf%3A0x4aed2e91353dc8a2!2sSerghei%20Lazo%20Park!5e1!3m2!1sen!2s!4v1756772178518!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959.1970421083537!2d28.808054247258266!3d47.02253969098323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dd08ff7299b%3A0x8c2c10e77adcc336!2s58%2C%20Strada%20Vasile%20Lupu%206A%2C%20MD-2008%2C%20Chi%C8%99in%C4%83u%2C%20Moldova!5e1!3m2!1sen!2s!4v1756852691233!5m2!1sen!2s"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "logoHeader": "National Customs Association",
+    "logoSubHeader": "Professionalism • Transparency • Integrity",
+    "home": "Home",
+    "news": "News",
+    "documents": "Documents",
+    "members": "Members",
+    "contact": "Contact"
+  },
+  "hero": {
+    "imgAlt": "Customs image",
+    "heroHeader": "We protect the rights and image of the customs community",
+    "heroText": "Our mission is to professionally represent the interests of our members, promote transparency, and strengthen public trust in customs activities.",
+    "heroButton1": "See news",
+    "heroButton2": "Contacts"
+  },
+  "footer": {
+    "logoText": "National Customs Association",
+    "textUnderLogo": "Organization created by former and current customs officers, with the purpose of protecting their rights, interests, and image.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "documents": "Documents",
+    "members": "Members",
+    "news": "News",
+    "contactCategory": "Contacts",
+    "address": "1 Ștefan cel Mare Blvd, Chișinău, Moldova",
+    "phone": "Tel: +373 22 000 000",
+    "email": "Email: contact@anv.md",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "copyright": "© 2025 National Customs Association. All rights reserved."
+  },
+  "news": {
+    "header": "Latest News",
+    "allNews": "all news →",
+    "read": "Read article"
+  },
+  "newsPage": {
+    "header": "News / Updates",
+    "subHeader": "The latest press releases, events, and reports of the association.",
+    "searchPlaceholder": "Search by title",
+    "all": "All",
+    "fromOldToNew": "Oldest first",
+    "fromNewToOld": "Newest first",
+    "showMore": "Show more news"
+  },
+  "contact": {
+    "header": "Contact",
+    "address": "Address: bd. Ștefan cel Mare 1, Chișinău, Moldova",
+    "phone": "Phone: +373 22 000 000",
+    "mail": "Email: contact@anv.md",
+    "nume": "Name",
+    "email": "Email",
+    "mesage": "Message"
+  }
+}

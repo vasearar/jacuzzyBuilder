@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "logoHeader": "Asociația Națională Vamală",
+    "logoSubHeader": "Profesionalism • Transparență • Integritate",
+    "home": "Acasă",
+    "news": "Noutăți",
+    "documents": "Documente",
+    "members": "Membri",
+    "contact": "Contact"
+  },
+  "hero": {
+    "imgAlt": "Imagine cu vamă",
+    "heroHeader": "Protejăm drepturile și imaginea comunității vamale",
+    "heroText": "Misiunea noastră este să reprezentăm cu profesionalism interesele membrilor, să promovăm transparența și să consolidăm încrederea publică în activitatea vamală.",
+    "heroButton1": "Vezi noutățile",
+    "heroButton2": "Contacte"
+  },
+  "footer": {
+    "logoText": "Asociația Națională Vamală",
+    "textUnderLogo": "Organizație creată de foști și actuali angajați vamali, cu scopul de a proteja drepturile, interesele și imaginea acestora.",
+    "quickLinks": "Linkuri rapide",
+    "contact": "Contact",
+    "documents": "Documente",
+    "members": "Membri",
+    "news": "Știri",
+    "contactCategory": "Contacte",
+    "address": "bd. Ștefan cel Mare 1, Chișinău, Moldova",
+    "phone": "Tel: +373 22 000 000",
+    "email": "Email: contact@anv.md",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "copyright": "© 2025 Asociația Națională Vamală. Toate drepturile rezervate."
+  },
+  "news": {
+    "header": "Ultimele știri",
+    "allNews": "toate știrile →",
+    "read": "Citește articolul"
+  },
+  "newsPage": {
+    "header": "Noutăți / Știri",
+    "subHeader": "Cele mai recente comunicate, evenimente și rapoarte ale asociației.",
+    "searchPlaceholder": "Caută după titlu",
+    "all": "Toate",
+    "fromOldToNew": "Cele mai vechi",
+    "fromNewToOld": "Cele mai noi",
+    "showMore": "Afișează mai multe știri"
+  },
+  "contact": {
+    "header": "Contacte",
+    "address": "<b>Adresă:</b> bd. Ștefan cel Mare 1, Chișinău, Moldova",
+    "phone": "<b>Telefon:</b> +373 22 000 000",
+    "mail": "<b>Email:</b> contact@anv.md",
+    "nume": "Nume",
+    "email": "Email",
+    "mesage": "Mesaj"
+  }
+}

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="grid grid-cols-full w-full">
       <h1 className="text-2xl col-span-full mt-32">{t("header")}</h1>
-      <div className="bg-[#f1f1f1] p-8 grid grid-cols-2 w-full col-span-full w-full rounded-2xl">
+      <div className="bg-[#f1f1f1] p-8 grid grid-cols-2 w-full col-span-full rounded-2xl">
         <div className="col-span-1">
           <p
             dangerouslySetInnerHTML={{ __html: t("address") }}
@@ -28,18 +28,21 @@ const Contact = () => {
             <input
               type="text"
               placeholder={t("nume")}
-              className="py-2 px-3 rounded-xl"
+              className="py-2 px-3 rounded-xl border-[1px] border-[#CAD5E2]"
             />
             <input
               type="text"
               placeholder={t("email")}
-              className="py-2 px-3 rounded-xl"
+              className="py-2 px-3 rounded-xl border-[1px] border-[#CAD5E2]"
             />
-            <input
-              type="text"
+            <textarea
               placeholder={t("mesage")}
-              className="py-2 px-3 rounded-xl"
+              className="py-2 px-3 rounded-xl border-[1px] border-[#CAD5E2]"
+              rows={5}
             />
+            <button className="self-start px-4 py-3 bg-[#5F9CFF] rounded-2xl text-[#f1f1f1] border-[1px] border-[#F1F1F1] cursor-pointer small-shadow">
+              {t("send")}
+            </button>
           </div>
         </div>
         <div className="col-span-1 col-start-2">
@@ -50,7 +53,7 @@ const Contact = () => {
             style={{ border: 0 }}
             allowFullScreen={true}
             loading="lazy"
-            className="w-full rounded-r-2xl"
+            className="w-full h-full rounded-r-2xl"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

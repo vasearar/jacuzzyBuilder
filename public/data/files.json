@@ -1,0 +1,87 @@
+{
+  "1": {
+    "ro": {
+      "title": "Statutul Asociației (actializat 2025)",
+      "tag": "Statutul Asociației",
+      "file": "/files/ANV.pdf"
+    },
+    "ru": {
+      "title": "Устав Ассоциации (обновлён 2025)",
+      "tag": "Устав Ассоциации",
+      "file": "/files/ANV.pdf"
+    },
+    "en": {
+      "title": "Association Statute (updated 2025)",
+      "tag": "Association Statute",
+      "file": "/files/ANV.pdf"
+    }
+  },
+  "2": {
+    "ro": {
+      "title": "Comunicat: lansarea platformei de informare",
+      "tag": "Comunitate",
+      "file": "/files/ANV.pdf"
+    },
+    "ru": {
+      "title": "Пресс-релиз: запуск информационной платформы",
+      "tag": "Сообщество",
+      "file": "/files/ANV.pdf"
+    },
+    "en": {
+      "title": "Press Release: launch of the information platform",
+      "tag": "Community",
+      "file": "/files/ANV.pdf"
+    }
+  },
+  "3": {
+    "ro": {
+      "title": "Comunicat: lansarea platformei de informare",
+      "tag": "Comunicate",
+      "file": "/files/ANV.pdf"
+    },
+    "ru": {
+      "title": "Пресс-релиз: запуск информационной платформы",
+      "tag": "Пресс-релизы",
+      "file": "/files/ANV.pdf"
+    },
+    "en": {
+      "title": "Press Release: launch of the information platform",
+      "tag": "Press Releases",
+      "file": "/files/ANV.pdf"
+    }
+  },
+  "4": {
+    "ro": {
+      "title": "Hotărâre: codul de conduită pentru integritate",
+      "tag": "Hotărâri",
+      "file": "/files/ANV.pdf"
+    },
+    "ru": {
+      "title": "Решение: кодекс поведения для обеспечения честности",
+      "tag": "Решения",
+      "file": "/files/ANV.pdf"
+    },
+    "en": {
+      "title": "Decision: code of conduct for integrity",
+      "tag": "Decisions",
+      "file": "/files/ANV.pdf"
+    }
+  },
+  "5": {
+    "ro": {
+      "title": "Raport anual 2024",
+      "tag": "Rapoarte",
+      "file": "/files/ANV.pdf"
+    },
+    "ru": {
+      "title": "Годовой отчет 2024",
+      "tag": "Отчёты",
+      "file": "/files/ANV.pdf"
+    },
+    "en": {
+      "title": "Annual Report 2024",
+      "tag": "Reports",
+      "file": "/files/ANV.pdf"
+    }
+  }
+}

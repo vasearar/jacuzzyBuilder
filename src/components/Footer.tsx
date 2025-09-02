@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className="grid grid-cols-full place-items-center">
-        <p className="col-span-full text-[#3F3F40] py-6">{t("showMore")}</p>
+        <p className="col-span-full text-[#3F3F40] py-6">{t("copyright")}</p>
       </div>
     </footer>
   );

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation(undefined, { keyPrefix: "hero" });
@@ -8,15 +9,23 @@ const Hero = () => {
         <div className="w-full h-full bg-[url(/public/images/circle.svg)] relative py-10">
           <div className="grid grid-cols-full w-full h-full relative text-[#f1f1f1]">
             <div className="col-span-6 flex flex-col justify-center gap-4">
+              <p className="text-xl">{t("quote")}</p>
               <h1 className="font-semibold text-5xl">{t("heroHeader")}</h1>
               <h2 className="my-4">{t("heroText")}</h2>
               <div className="gap-6 flex">
-                <button className="rounded-2xl border-[1px] border-[#f1f1f1] px-4 py-3 cursor-pointer bg-[#f1f1f1]/40 hover:bg-[#f1f1f1]/20 transition">
+                <NavLink
+                  to="/news"
+                  className="rounded-2xl border-[1px] border-[#f1f1f1] px-4 py-3 cursor-pointer bg-[#f1f1f1]/40 hover:bg-[#f1f1f1]/20 transition"
+                >
                   {t("heroButton1")}
-                </button>
-                <button className="rounded-2xl border-[1px] border-[#f1f1f1] px-4 py-3 cursor-pointer bg-[#f1f1f1]/40 hover:bg-[#f1f1f1]/20 transition">
+                </NavLink>
+
+                <NavLink
+                  to="/contact"
+                  className="rounded-2xl border-[1px] border-[#f1f1f1] px-4 py-3 cursor-pointer bg-[#f1f1f1]/40 hover:bg-[#f1f1f1]/20 transition"
+                >
                   {t("heroButton2")}
-                </button>
+                </NavLink>
               </div>
             </div>
             <div className="col-span-6 aspect-16/9 my-auto col-start-7">
@@ -39,6 +48,7 @@ const Hero = () => {
           <div className="relative mx-auto max-w-7xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center text-[#f1f1f1]">
               <div className="lg:col-span-6 flex flex-col justify-center gap-5 text-center lg:text-left">
+                <p className="text-xl">{t("quote")}</p>
                 <h1 className="font-semibold leading-tight text-[clamp(1.5rem,6vw,3rem)]">
                   {t("heroHeader")}
                 </h1>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
-import Logo from "./Logo";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
@@ -31,7 +30,7 @@ function NavBarInner() {
     <nav className="bg-[#FCFDFE]/50 backdrop-blur w-full fixed top-0 left-0 right-0 z-40">
       <div className="grid-cols-full grid items-center container mx-auto px-4">
         <div className="flex py-4.5 max-[1170px]:col-span-10 col-span-4 items-center">
-          <Logo />
+          <img className="size-[42px]" src="/Logo.svg" alt="logo" />
           <div className="flex flex-col ml-2.5">
             <span className="font-medium xl:text-base text-sm">
               {t("logoHeader")}
@@ -145,7 +144,7 @@ function NavBarInner() {
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-black/5">
           <div className="flex items-center">
-            <Logo />
+            <img className="size-[42px]" src="/Logo.svg" alt="logo" />
             <span className="ml-2 font-medium">{t("logoHeader")}</span>
           </div>
 
@@ -218,4 +217,3 @@ function NavBarInner() {
 
 export const NavBar = NavBarInner;
 export default NavBarInner;
-

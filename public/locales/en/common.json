@@ -12,6 +12,7 @@
     "imgAlt": "Customs image",
     "heroHeader": "We protect the rights and image of the customs community",
     "heroText": "Our mission is to professionally represent the interests of our members, promote transparency, and strengthen public trust in customs activities.",
+    "quote": "\"Honoring the past, we support the future\"",
     "heroButton1": "See news",
     "heroButton2": "Contacts"
   },
@@ -55,7 +56,9 @@
     "nume": "Name",
     "email": "Email",
     "mesage": "Message",
-    "send": "Send"
+    "send": "Send",
+    "sending": "Sending",
+    "sentOk": "Success"
   },
   "members": {
     "header": "Members",
@@ -67,14 +70,14 @@
       "name": "Marina Popescu",
       "task1": "Strategic coordination",
       "task2": "Institutional representation",
-      "image": "https://i.pinimg.com/736x/3c/63/1b/3c631b97815217aaa9716d368feb990a.jpg"
+      "image": "/images/membru.jpg"
     },
     "2": {
       "role": "Vice President",
       "name": "Ion Rusu",
       "task1": "Projects and partnerships",
       "task2": "Member support",
-      "image": "https://i.pinimg.com/736x/50/1d/f1/501df15ed64623ab3b8054eb2b9bb0d0.jpg"
+      "image": ""
     },
     "3": {
       "role": "Secretary General",

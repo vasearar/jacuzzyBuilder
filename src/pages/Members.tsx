@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const MemberCard = ({
@@ -10,19 +11,45 @@ const MemberCard = ({
   showTasks?: boolean;
 }) => {
   const { t } = useTranslation(undefined, { keyPrefix: "members" });
+
+  const name = (t(`${id}.name`) as string) ?? "";
+  const imageSrc = ((t(`${id}.image`) as string) ?? "").trim();
+
+  const [imgError, setImgError] = useState(false);
+  const showFallback = !imageSrc || imgError;
+
+  const initials = useMemo(() => {
+    const parts = name.trim().split(/\s+/).filter(Boolean);
+    const chars = (parts[0]?.[0] ?? "") + (parts[1]?.[0] ?? "");
+    return (chars || "?").toUpperCase();
+  }, [name]);
+
   return (
     <div className="small-shadow rounded-2xl p-4 sm:p-5 col-span-8 sm:col-span-6 lg:col-span-4">
       <div className="flex items-center gap-4">
-        <img
-          className="size-14 sm:size-16 rounded-full object-cover object-top small-shadow border-[1px] border-[#3A47EA]"
-          src={t(`${id}.image`) as string}
-          alt={t(`${id}.name`) as string}
-        />
+        {showFallback ? (
+          <div
+            className="size-14 sm:size-16 rounded-full small-shadow border-[1px] border-[#3A47EA] bg-[#3A47EA] text-white flex items-center justify-center text-base sm:text-lg font-semibold select-none"
+            aria-label={name || "Member avatar"}
+            role="img"
+          >
+            {initials}
+          </div>
+        ) : (
+          <img
+            className="size-14 sm:size-16 rounded-full object-cover object-top small-shadow border-[1px] border-[#3A47EA]"
+            src={imageSrc}
+            alt={name}
+            onError={() => setImgError(true)}
+          />
+        )}
+
         <div className="flex flex-col">
-          <p className="text-sm sm:text-base">{t(`${id}.name`)}</p>
+          <p className="text-sm sm:text-base">{name}</p>
           <span className={roleClass}>{t(`${id}.role`)}</span>
         </div>
       </div>
+
       {showTasks && (
         <div className="mt-2 text-sm sm:text-base">
           <p>• {t(`${id}.task1`)}</p>

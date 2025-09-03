@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import Logo from "./Logo";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-full gap-y-8">
           <div className="col-span-full md:col-span-6 lg:col-span-4">
             <div className="flex gap-3 items-center justify-start">
-              <Logo />
+              <img className="size-[42px]" src="/Logo.svg" alt="logo" />
               <span className="font-medium">{t("logoText")}</span>
             </div>
             <p className="text-[#3F3F40] mt-4 text-left">

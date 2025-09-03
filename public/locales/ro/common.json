@@ -13,7 +13,8 @@
     "heroHeader": "Protejăm drepturile și imaginea comunității vamale",
     "heroText": "Misiunea noastră este să reprezentăm cu profesionalism interesele membrilor, să promovăm transparența și să consolidăm încrederea publică în activitatea vamală.",
     "heroButton1": "Vezi noutățile",
-    "heroButton2": "Contacte"
+    "heroButton2": "Contacte",
+    "quote": "\"Onorând trecutul, susținem viitorul\""
   },
   "footer": {
     "logoText": "Asociația Națională Vamală",
@@ -55,7 +56,9 @@
     "nume": "Nume",
     "email": "Email",
     "mesage": "Mesaj",
-    "send": "Trimite"
+    "send": "Trimite",
+    "sending": "Se trimite",
+    "sentOk": "Success"
   },
   "members": {
     "header": "Membri",
@@ -67,14 +70,14 @@
       "name": "Marina Popescu",
       "task1": "Coordonare strategică",
       "task2": "Reprezentare instituțională",
-      "image": "https://i.pinimg.com/736x/3c/63/1b/3c631b97815217aaa9716d368feb990a.jpg"
+      "image": "/images/membru.jpg"
     },
     "2": {
       "role": "Vicepreședinte",
       "name": "Ion Rusu",
       "task1": "Proiecte și parteneriate",
       "task2": "Suport membri",
-      "image": "https://i.pinimg.com/736x/50/1d/f1/501df15ed64623ab3b8054eb2b9bb0d0.jpg"
+      "image": ""
     },
     "3": {
       "role": "Secretar general",

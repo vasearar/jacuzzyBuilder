@@ -6,8 +6,8 @@ import { useTranslation } from "react-i18next";
 
 const LANGS = [
   { code: "ro", label: "Română" },
-  { code: "ru", label: "Русский" },
   { code: "en", label: "English" },
+  { code: "ru", label: "Русский" },
 ];
 
 export default function LanguageSwitcher() {

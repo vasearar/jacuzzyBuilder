@@ -64,58 +64,7 @@
     "header": "Members",
     "subHeader": "Board of Directors and Founding Members",
     "consilium": "Board of Directors",
-    "founders": "Founding Members",
-    "1": {
-      "role": "President",
-      "name": "Marina Popescu",
-      "task1": "Strategic coordination",
-      "task2": "Institutional representation",
-      "image": "/images/membru.jpg"
-    },
-    "2": {
-      "role": "Vice President",
-      "name": "Ion Rusu",
-      "task1": "Projects and partnerships",
-      "task2": "Member support",
-      "image": ""
-    },
-    "3": {
-      "role": "Secretary General",
-      "name": "Elena Cebotari",
-      "task1": "Transparency and communication",
-      "task2": "Internal processes",
-      "image": "https://i.pinimg.com/736x/07/a1/dd/07a1dd0b43aaf72f4f9ed312da490fe9.jpg"
-    },
-    "4": {
-      "role": "Role: Co-founder / supporter",
-      "name": "Andrei Munteanu",
-      "image": "https://i.pinimg.com/736x/4a/df/ff/4adffff1994a4a31139f3d5d2635d75d.jpg"
-    },
-    "5": {
-      "role": "Role: Co-founder / supporter",
-      "name": "Tatiana Țurcan",
-      "image": "https://i.pinimg.com/736x/c7/93/d6/c793d6a945f969845ea93c546fbfa638.jpg"
-    },
-    "6": {
-      "role": "Role: Co-founder / supporter",
-      "name": "Victor Balan",
-      "image": "https://i.pinimg.com/1200x/bc/d8/d4/bcd8d4d8302a5ba624e5832caa3738bc.jpg"
-    },
-    "7": {
-      "role": "Role: Co-founder / supporter",
-      "name": "Radu Țurcanu",
-      "image": "https://i.pinimg.com/736x/4e/1f/06/4e1f0685b15a55de8954ce8508961f9a.jpg"
-    },
-    "8": {
-      "role": "Role: Co-founder / supporter",
-      "name": "Olga Sârbu",
-      "image": "https://i.pinimg.com/1200x/33/4b/fd/334bfd4ee7176b161425d9b868740bdb.jpg"
-    },
-    "9": {
-      "role": "Role: Co-founder / supporter",
-      "name": "Sergiu Țâru",
-      "image": "https://i.pinimg.com/736x/5f/70/ca/5f70caec7ef455b3ecd43b428ed7dfa2.jpg"
-    }
+    "founders": "Founding Members"
   },
   "filesPage": {
     "header": "Documents",

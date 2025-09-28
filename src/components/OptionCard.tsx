@@ -51,9 +51,9 @@ export const OptionCard: React.FC<Props> = ({
 
   return (
     <div className="col-span-1 select-none">
-      <div className="cursor-pointer p-2 group" onClick={onClick} title={txt}>
+      <div className="cursor-pointer p-2 group text-center" onClick={onClick} title={txt}>
         {img && (
-          <span className={strokeClasses}>
+          <span className={`${strokeClasses}`}>
             <img
               src={img}
               alt={txt}
@@ -94,4 +94,3 @@ export const OptionCard: React.FC<Props> = ({
     </div>
   );
 };
-  

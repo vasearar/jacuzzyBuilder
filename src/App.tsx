@@ -7,7 +7,19 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/configurator" element={<Configurator />} />
-        <Route path="*" element={<div className="p-10">404 Not Found</div>} />
+        <Route
+          path="*"
+          element={
+            <div className="p-10">
+              <a
+                href="/configurator"
+                className="hover:underline hover:text-blue-500"
+              >
+                Configurator
+              </a>
+            </div>
+          }
+        />
       </Route>
     </Routes>
   );

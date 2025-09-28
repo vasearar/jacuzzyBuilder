@@ -1,0 +1,98 @@
+{
+  "insulated_cover_black_200": {
+    "images": "/covers/cover_black.webp",
+    "ro": {
+      "title": "Husă izolată - neagră (200 cm)"
+    },
+    "ru": {
+      "title": "Изолированная крышка - чёрная (200 см)"
+    },
+    "en": {
+      "title": "Insulated cover - black (200cm)"
+    }
+  },
+  "insulated_cover_black_225": {
+    "images": "/covers/cover_black.webp",
+    "ro": {
+      "title": "Husă izolată - neagră (225 cm, 200x200 cm)"
+    },
+    "ru": {
+      "title": "Изолированная крышка - чёрная (225 см, 200x200 см)"
+    },
+    "en": {
+      "title": "Insulated cover - black (225cm, 200x200cm)"
+    }
+  },
+  "insulated_cover_brown_200": {
+    "images": "/covers/cover_brown.webp",
+    "ro": {
+      "title": "Husă izolată - maro (200 cm)"
+    },
+    "ru": {
+      "title": "Изолированная крышка - коричневая (200 см)"
+    },
+    "en": {
+      "title": "Insulated cover - brown (200cm)"
+    }
+  },
+  "insulated_cover_brown_225": {
+    "images": "/covers/cover_brown.webp",
+    "ro": {
+      "title": "Husă izolată - maro (225 cm, 200x200 cm)"
+    },
+    "ru": {
+      "title": "Изолированная крышка - коричневая (225 см, 200x200 см)"
+    },
+    "en": {
+      "title": "Insulated cover - brown (225cm, 200x200cm)"
+    }
+  },
+  "wooden_cover_spruce": {
+    "images": "/covers/new_sprucecover.webp",
+    "ro": {
+      "title": "Capac din lemn - molid"
+    },
+    "ru": {
+      "title": "Деревянная крышка - ель"
+    },
+    "en": {
+      "title": "Wooden cover - spruce"
+    }
+  },
+  "wooden_cover_thermo": {
+    "images": "/covers/wooden_cover.jpg",
+    "ro": {
+      "title": "Capac din lemn - termo/larice"
+    },
+    "ru": {
+      "title": "Деревянная крышка - термо/лиственница"
+    },
+    "en": {
+      "title": "Wooden cover - thermo/larch"
+    }
+  },
+  "insulated_cover_black": {
+    "images": "/covers/cover_black.webp",
+    "ro": {
+      "title": "Husă izolată - neagră"
+    },
+    "ru": {
+      "title": "Изолированная крышка - чёрная"
+    },
+    "en": {
+      "title": "Insulated cover - black"
+    }
+  },
+  "insulated_cover_brown": {
+    "images": "/covers/cover_brown.webp",
+    "ro": {
+      "title": "Husă izolată - maro"
+    },
+    "ru": {
+      "title": "Изолированная крышка - коричневая"
+    },
+    "en": {
+      "title": "Insulated cover - brown"
+    }
+  }
+}

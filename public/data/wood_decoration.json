@@ -1,0 +1,62 @@
+{
+  "spruce": {
+    "image": "/wood_decorations/spruce.webp",
+    "ro": {
+      "title": "Molid"
+    },
+    "ru": {
+      "title": "Ель"
+    },
+    "en": {
+      "title": "Spruce"
+    }
+  },
+  "thermo": {
+    "image": "/wood_decorations/thermo.webp",
+    "ro": {
+      "title": "Termo"
+    },
+    "ru": {
+      "title": "Термо"
+    },
+    "en": {
+      "title": "Thermo"
+    }
+  },
+  "wpc_black": {
+    "image": "/wood_decorations/wpc_black.webp",
+    "ro": {
+      "title": "WPC Negru"
+    },
+    "ru": {
+      "title": "WPC Чёрный"
+    },
+    "en": {
+      "title": "WPC Black"
+    }
+  },
+  "wpc_brown": {
+    "image": "/wood_decorations/wpc_brown.webp",
+    "ro": {
+      "title": "WPC Maro"
+    },
+    "ru": {
+      "title": "WPC Коричневый"
+    },
+    "en": {
+      "title": "WPC Brown"
+    }
+  },
+  "red_cedar": {
+    "image": "/wood_decorations/red_cedar.webp",
+    "ro": {
+      "title": "Cedru roșu"
+    },
+    "ru": {
+      "title": "Красный кедр"
+    },
+    "en": {
+      "title": "Red Cedar"
+    }
+  }
+}

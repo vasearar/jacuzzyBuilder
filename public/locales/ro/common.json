@@ -1,79 +1,20 @@
 {
-  "navbar": {
-    "logoHeader": "Asociația Națională Vamală",
-    "logoSubHeader": "Profesionalism • Transparență • Integritate",
-    "home": "Acasă",
-    "news": "Noutăți",
-    "documents": "Documente",
-    "members": "Membri",
-    "contact": "Contact"
-  },
-  "hero": {
-    "imgAlt": "Imagine cu vamă",
-    "heroHeader": "Protejăm drepturile și imaginea comunității vamale",
-    "heroText": "Misiunea noastră este să reprezentăm cu profesionalism interesele membrilor, să promovăm transparența și să consolidăm încrederea publică în activitatea vamală.",
-    "heroButton1": "Vezi noutățile",
-    "heroButton2": "Contacte",
-    "quote": "\"Onorând trecutul, susținem viitorul\""
-  },
-  "footer": {
-    "logoText": "Asociația Națională Vamală",
-    "textUnderLogo": "Organizație creată de foști și actuali angajați vamali, cu scopul de a proteja drepturile, interesele și imaginea acestora.",
-    "quickLinks": "Linkuri rapide",
-    "contact": "Contact",
-    "documents": "Documente",
-    "members": "Membri",
-    "news": "Știri",
-    "contactCategory": "Contacte",
-    "address": "MD-2008, mun. Chisinău, str. Vasile Lupu, 6, nr. 58",
-    "phone": "Tel: +373 69195884",
-    "fax": "Fax: +373 22992235",
-    "email": "Email: contact@anv.md",
-    "facebook": "Facebook",
-    "instagram": "Instagram",
-    "copyright": "© 2025 Asociația Națională Vamală. Toate drepturile rezervate."
-  },
-  "news": {
-    "header": "Ultimele știri",
-    "allNews": "toate știrile →",
-    "read": "Citește articolul"
-  },
-  "newsPage": {
-    "header": "Noutăți / Știri",
-    "subHeader": "Cele mai recente comunicate, evenimente și rapoarte ale asociației.",
-    "searchPlaceholder": "Caută după titlu",
-    "all": "Toate",
-    "fromOldToNew": "Cele mai vechi",
-    "fromNewToOld": "Cele mai noi",
-    "showMore": "Afișează mai multe știri"
-  },
-  "contact": {
-    "header": "Contacte",
-    "address": "<b>Adresă:</b> mun. Chisinău, str. Vasile Lupu, 6, nr. 58",
-    "phone": "<b>Telefon:</b> +373 69 195 884",
-    "fax": "<b>Fax:</b> +373 22 992 235",
-    "mail": "<b>Email:</b> contact@anv.md",
-    "nume": "Nume",
-    "email": "Email",
-    "mesage": "Mesaj",
-    "send": "Trimite",
-    "sending": "Se trimite",
-    "sentOk": "Success"
-  },
-  "members": {
-    "header": "Membri",
-    "subHeader": "Consiliul Director și membrii fondatori",
-    "consilium": "Consiliu director",
-    "founders": "Membri"
-  },
-  "filesPage": {
-    "header": "Documente / Acte",
-    "subHeader": "Accesează rapid statutul, regulamentele, comunicatele, hotărârile și rapoartele.",
-    "searchPlaceholder": "Caută după titlu",
-    "all": "toate",
-    "fromOldToNew": "Cele mai vechi",
-    "fromNewToOld": "Cele mai noi",
-    "loading": "Se încarcă...",
-    "noResults": "Niciun rezultat"
+  "common": {
+    "calculator_header": "PORTAL DE PLASARE COMENZI",
+    "selected_package": "PACHET SELECTAT",
+    "hot_tub_model": "MODEL DE CADĂ CU HIDROMASAJ",
+    "heater": "ÎNCĂLZITOR",
+    "size": "MĂRIME",
+    "insert_colour": "CULOARE INSERȚIE",
+    "wood_decoration": "DECORAȚIUNE DIN LEMN",
+    "standard_package": "PACHET STANDARD",
+    "additional_accesories": "ACCESORII SUPLIMENTARE",
+    "spa_systems": "SISTEME SPA",
+    "led_lights": "LUMINI LED",
+    "covers": "HUSE",
+    "filters": "FILTRE",
+    "other_accessories": "ALTE ACCESORII",
+    "common.included": "0",
+    "please_select_tub_first": "Vă rugăm să selectați mai întâi cada"
   }
 }

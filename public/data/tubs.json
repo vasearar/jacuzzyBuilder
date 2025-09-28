@@ -1,0 +1,321 @@
+{
+  "acrylic": {
+    "ro": {
+      "title": "Acrilic",
+      "selected_text": "Cada cu hidromasaj din acrilic"
+    },
+    "en": {
+      "title": "Acrylic",
+      "selected_text": "Acrylic hot tub"
+    },
+    "ru": {
+      "title": "Акрил",
+      "selected_text": "Акриловая гидромассажная ванна"
+    },
+    "image": "/tubs/acrylic.webp",
+    "heaters": [
+      { "integrated_35_304": "760" },
+      { "integrated_35_316": "1000" },
+      { "horizon_30_304": "1060" },
+      { "horizon_30_316": "1300" },
+      { "external_20_304": "640" },
+      { "external_26_304": "900" },
+      { "external_30_304": "1080" },
+      { "external_20_316": "1000" },
+      { "external_26_316": "1230" },
+      { "external_30_316": "1460" },
+      { "electric_3": "780" },
+      { "electric_6": "1240" },
+      { "electric_9": "1240" },
+      { "electric_3_gecko": "1200" },
+      { "electric_3_gecko_wifi": "1440" }
+    ],
+    "insert_colour": [
+      { "pearl_white": "0" },
+      { "metallic_grey": "0" },
+      { "metallic_blue": "0" },
+      { "metallic_gold": "0" }
+    ],
+    "sizes": [{ "200cm": "0" }, { "200x200cm": "380" }],
+    "covers": [
+      { "insulated_cover_black_200": "540" },
+      { "insulated_cover_black_225": "580" },
+      { "insulated_cover_brown_200": "540" },
+      { "insulated_cover_brown_225": "580" },
+      { "wooden_cover_spruce": "300" },
+      { "wooden_cover_thermo": "360" }
+    ],
+    "wood_decorations": [
+      { "spruce": "200" },
+      { "thermo": "440" },
+      { "wpc_black": "440" },
+      { "wpc_brown": "440" },
+      { "red_cedar": "1700" }
+    ],
+    "price": "2540"
+  },
+  "fiberglass": {
+    "ro": {
+      "title": "Fibra de sticlă",
+      "selected_text": "Cada cu hidromasaj din fibră de sticlă"
+    },
+    "en": {
+      "title": "Fiberglass",
+      "selected_text": "Fiberglass hot tub"
+    },
+    "ru": {
+      "title": "Стекловолокно",
+      "selected_text": "Гидромассажная ванна из стекловолокна"
+    },
+    "image": "/tubs/fiberglass.jpg",
+    "heaters": [
+      { "integrated_35_304": "640" },
+      { "integrated_35_316": "880" },
+      { "horizon_30_304": "940" },
+      { "horizon_30_316": "1180" },
+      { "external_20_304": "640" },
+      { "external_26_304": "900" },
+      { "external_30_304": "1080" },
+      { "external_20_316": "1000" },
+      { "external_26_316": "1230" },
+      { "external_30_316": "1460" },
+      { "electric_3": "780" },
+      { "electric_6": "1240" },
+      { "electric_9": "1240" },
+      { "electric_3_gecko": "1200" },
+      { "electric_3_gecko_wifi": "1420" }
+    ],
+    "insert_colour": [{ "white": "0" }, { "grey": "0" }, { "blue": "0" }],
+    "sizes": [{ "200cm": "0" }, { "225cm": "480" }],
+    "covers": [
+      { "insulated_cover_black_200": "540" },
+      { "insulated_cover_black_225": "580" },
+      { "insulated_cover_brown_200": "540" },
+      { "insulated_cover_brown_225": "580" },
+      { "wooden_cover_spruce": "300" },
+      { "wooden_cover_thermo": "360" }
+    ],
+    "wood_decorations": [
+      { "spruce": "200" },
+      { "thermo": "440" },
+      { "wpc_black": "440" },
+      { "wpc_brown": "440" },
+      { "red_cedar": "1700" }
+    ],
+    "price": "2120"
+  },
+  "ofuro_acrylic": {
+    "ro": {
+      "title": "Ofuro acrilic",
+      "selected_text": "Cada Ofuro din acrilic"
+    },
+    "en": {
+      "title": "Ofuro acrylic",
+      "selected_text": "Ofuro acrylic hot tub"
+    },
+    "ru": {
+      "title": "Офуро акрил",
+      "selected_text": "Акриловая ванна офуро"
+    },
+    "image": "/tubs/ofuro_acrylic.jpg",
+    "heaters": [
+      { "integrated_20_304": "880" },
+      { "integrated_20_316": "1120" },
+      { "external_20_304": "640" },
+      { "external_26_304": "900" },
+      { "external_30_304": "1080" },
+      { "external_20_316": "1000" },
+      { "external_26_316": "1230" },
+      { "external_30_316": "1460" },
+      { "electric_3": "780" },
+      { "electric_6": "1240" },
+      { "electric_9": "1240" },
+      { "electric_3_gecko": "1200" },
+      { "electric_3_gecko_wifi": "1420" }
+    ],
+    "sizes": [{ "190x120cm": "200" }],
+    "covers": [
+      { "insulated_cover_black": "400" },
+      { "insulated_cover_brown": "400" },
+      { "wooden_cover_spruce": "300" },
+      { "wooden_cover_thermo": "360" }
+    ],
+    "wood_decorations": [
+      { "spruce": "100" },
+      { "thermo": "300" },
+      { "wpc_black": "300" },
+      { "wpc_brown": "300" },
+      { "red_cedar": "1260" }
+    ],
+    "insert_colour": [
+      { "pearl_white_ofuro": "0" },
+      { "metallic_grey_ofuro": "0" },
+      { "metallic_gold_ofuro": "0" }
+    ],
+    "price": "2020"
+  },
+  "ofuro_fiberglass": {
+    "ro": {
+      "title": "Ofuro din fibră de sticlă",
+      "selected_text": "Cada Ofuro din fibră de sticlă"
+    },
+    "en": {
+      "title": "Ofuro fiberglass",
+      "selected_text": "Ofuro fiberglass hot tub"
+    },
+    "ru": {
+      "title": "Офуро стекловолокно",
+      "selected_text": "Гидромассажная ванна офуро из стекловолокна"
+    },
+    "image": "/tubs/ofuro_fiberglass.jpg",
+    "heaters": [
+      { "integrated_20_304": "880" },
+      { "integrated_20_316": "1120" },
+      { "external_20_304": "640" },
+      { "external_26_304": "900" },
+      { "external_30_304": "1080" },
+      { "external_20_316": "1000" },
+      { "external_26_316": "1230" },
+      { "external_30_316": "1460" },
+      { "electric_3": "780" },
+      { "electric_6": "1240" },
+      { "electric_9": "1240" },
+      { "electric_3_gecko": "1200" },
+      { "electric_3_gecko_wifi": "1420" }
+    ],
+    "insert_colour": [
+      { "white_ofuro": "0" },
+      { "grey_ofuro": "0" },
+      { "blue_ofuro": "0" }
+    ],
+    "sizes": [{ "190x120cm": "200" }],
+    "covers": [
+      { "insulated_cover_black": "400" },
+      { "insulated_cover_brown": "400" },
+      { "wooden_cover_spruce": "300" },
+      { "wooden_cover_thermo": "360" }
+    ],
+    "wood_decorations": [
+      { "spruce": "100" },
+      { "thermo": "300" },
+      { "wpc_black": "300" },
+      { "wpc_brown": "300" },
+      { "red_cedar": "1260" }
+    ],
+    "price": "1760"
+  },
+  "acrylic_marble": {
+    "ro": {
+      "title": "Acrilic imitație marmură",
+      "selected_text": "Cada cu hidromasaj din acrilic imitație marmură"
+    },
+    "en": {
+      "title": "Acrylic marble",
+      "selected_text": "Acrylic marble hot tub"
+    },
+    "ru": {
+      "title": "Акрил под мрамор",
+      "selected_text": "Акриловая гидромассажная ванна под мрамор"
+    },
+    "image": "/tubs/marble.webp",
+    "heaters": [
+      { "integrated_35_304": "760" },
+      { "integrated_35_316": "1000" },
+      { "horizon_30_304": "1060" },
+      { "horizon_30_316": "1300" },
+      { "external_20_304": "640" },
+      { "external_26_304": "900" },
+      { "external_30_304": "1080" },
+      { "external_20_316": "1000" },
+      { "external_26_316": "1230" },
+      { "external_30_316": "1460" },
+      { "electric_3": "780" },
+      { "electric_6": "1240" },
+      { "electric_9": "1240" },
+      { "electric_3_gecko": "1200" },
+      { "electric_3_gecko_wifi": "1440" }
+    ],
+    "insert_colour": [
+      { "marble_default_white": "0" },
+      { "marble_default_grey": "0" },
+      { "marble_white": "400" },
+      { "marble_black": "400" },
+      { "marble_brown": "400" },
+      { "marble_coffee": "400" },
+      { "marble_green": "400" },
+      { "marble_blue": "400" }
+    ],
+    "sizes": [{ "200cm": "0" }, { "225cm": "400" }],
+    "covers": [
+      { "insulated_cover_black_200": "540" },
+      { "insulated_cover_black_225": "580" },
+      { "insulated_cover_brown_200": "540" },
+      { "insulated_cover_brown_225": "580" },
+      { "wooden_cover_spruce": "300" },
+      { "wooden_cover_thermo": "360" }
+    ],
+    "wood_decorations": [
+      { "spruce": "200" },
+      { "thermo": "440" },
+      { "wpc_black": "440" },
+      { "wpc_brown": "440" },
+      { "red_cedar": "1700" }
+    ],
+    "price": "2540"
+  },
+  "acrylic_jacuzzi": {
+    "ro": {
+      "title": "Jacuzzi acrilic",
+      "selected_text": "Cada cu hidromasaj tip jacuzzi din acrilic"
+    },
+    "en": {
+      "title": "Acrylic jacuzzi",
+      "selected_text": "Acrylic jacuzzi hot tub"
+    },
+    "ru": {
+      "title": "Акриловый джакузи",
+      "selected_text": "Акриловая гидромассажная ванна джакузи"
+    },
+    "image": "/tubs/acrylic_jacuzzi.webp",
+    "heaters": [
+      { "integrated_35_304_jacuzzi": "720" },
+      { "integrated_35_316_jacuzzi": "1000" },
+      { "external_20_304": "640" },
+      { "external_26_304": "900" },
+      { "external_30_304": "1080" },
+      { "external_20_316": "1000" },
+      { "external_26_316": "1230" },
+      { "external_30_316": "1460" },
+      { "electric_3": "780" },
+      { "electric_6": "1240" },
+      { "electric_9": "1240" },
+      { "electric_3_gecko": "1200" },
+      { "electric_3_gecko_wifi": "1440" }
+    ],
+    "insert_colour": [
+      { "white_jacuzzi": "300" },
+      { "grey_jacuzzi": "300" },
+      { "marble_white_jacuzzi": "300" },
+      { "marble_black_jacuzzi": "300" },
+      { "marble_brown_jacuzzi": "300" },
+      { "marble_coffee_jacuzzi": "300" },
+      { "marble_green_jacuzzi": "300" },
+      { "marble_blue_jacuzzi": "300" }
+    ],
+    "wood_decorations": [
+      { "spruce": "260" },
+      { "thermo": "560" },
+      { "wpc_black": "560" },
+      { "wpc_brown": "560" },
+      { "red_cedar": "1860" }
+    ],
+    "sizes": [{ "220x220cm": "0" }],
+    "covers": [
+      { "insulated_cover_black": "580" },
+      { "insulated_cover_brown": "580" },
+      { "wooden_cover_spruce": "300" },
+      { "wooden_cover_thermo": "360" }
+    ],
+    "price": "3840"
+  }
+}

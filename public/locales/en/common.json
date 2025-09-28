@@ -1,79 +1,20 @@
 {
-  "navbar": {
-    "logoHeader": "National Customs Association",
-    "logoSubHeader": "Professionalism • Transparency • Integrity",
-    "home": "Home",
-    "news": "News",
-    "documents": "Documents",
-    "members": "Members",
-    "contact": "Contact"
-  },
-  "hero": {
-    "imgAlt": "Customs image",
-    "heroHeader": "We protect the rights and image of the customs community",
-    "heroText": "Our mission is to professionally represent the interests of our members, promote transparency, and strengthen public trust in customs activities.",
-    "quote": "\"Honoring the past, we support the future\"",
-    "heroButton1": "See news",
-    "heroButton2": "Contacts"
-  },
-  "footer": {
-    "logoText": "National Customs Association",
-    "textUnderLogo": "Organization created by former and current customs officers, with the purpose of protecting their rights, interests, and image.",
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
-    "documents": "Documents",
-    "members": "Members",
-    "news": "News",
-    "contactCategory": "Contacts",
-    "address": "MD-2008, mun. Chisinau, Vasile Lupu Street, 6, apt. 58",
-    "phone": "Tel: +373 69195884",
-    "fax": "Fax: +373 22992235",
-    "email": "Email: contact@anv.md",
-    "facebook": "Facebook",
-    "instagram": "Instagram",
-    "copyright": "© 2025 National Customs Association. All rights reserved."
-  },
-  "news": {
-    "header": "Latest News",
-    "allNews": "all news →",
-    "read": "Read article"
-  },
-  "newsPage": {
-    "header": "News / Updates",
-    "subHeader": "The latest press releases, events, and reports of the association.",
-    "searchPlaceholder": "Search by title",
-    "all": "All",
-    "fromOldToNew": "Oldest first",
-    "fromNewToOld": "Newest first",
-    "showMore": "Show more news"
-  },
-  "contact": {
-    "header": "Contact",
-    "address": "<b>Address:</b> mun. Chisinau, Vasile Lupu Street, 6, apt. 58",
-    "phone": "<b>Phone:</b> +373 69 195 884",
-    "mail": "<b>Email:</b> contact@anv.md",
-    "fax": "<b>Fax:</b> +373 22 992 235",
-    "nume": "Name",
-    "email": "Email",
-    "mesage": "Message",
-    "send": "Send",
-    "sending": "Sending",
-    "sentOk": "Success"
-  },
-  "members": {
-    "header": "Members",
-    "subHeader": "Board of Directors and Founding Members",
-    "consilium": "Board of Directors",
-    "founders": "Founding Members"
-  },
-  "filesPage": {
-    "header": "Documents",
-    "subHeader": "Quickly access statutes, regulations, press releases, decisions and reports.",
-    "searchPlaceholder": "Search by title",
-    "all": "all",
-    "fromOldToNew": "Oldest first",
-    "fromNewToOld": "Newest first",
-    "loading": "Loading...",
-    "noResults": "No results"
+  "common": {
+    "calculator_header": "ORDER PLACEMENT PORTAL",
+    "selected_package": "SELECTED PACKAGE",
+    "hot_tub_model": "HOT TUB MODEL",
+    "heater": "HEATER",
+    "size": "SIZE",
+    "insert_colour": "INSERT COLOUR",
+    "wood_decoration": "WOOD DECORATION",
+    "standard_package": "STANDARD PACKAGE",
+    "additional_accesories": "ADDITIONAL ACCESORIES",
+    "spa_systems": "SPA SYSTEMS",
+    "led_lights": "LED LIGHTS",
+    "covers": "COVERS",
+    "filters": "FILTERS",
+    "other_accessories": "OTHER ACCESORIES",
+    "common.included": "0",
+    "please_select_tub_first": "Please select tub first"
   }
 }

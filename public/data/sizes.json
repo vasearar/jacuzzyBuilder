@@ -1,0 +1,22 @@
+{
+  "200cm": {
+    "title": "200 cm",
+    "image": "/sizes/size.jpg"
+  },
+  "225cm": {
+    "title": "225 cm",
+    "image": "/sizes/size.jpg"
+  },
+  "190x120cm": {
+    "title": "190x120 cm",
+    "image": "/sizes/size.jpg"
+  },
+  "200x200cm": {
+    "title": "200x200 cm",
+    "image": "/sizes/size_rectangular.webp"
+  },
+  "220x220cm": {
+    "title": "220x220 cm",
+    "image": "/sizes/size_rectangular.webp"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "pearl_white": {
+    "image": "/insert_colors/pearl_white.jpg",
+    "ro": { "title": "Alb perlat" },
+    "ru": { "title": "Перламутровый белый" },
+    "en": { "title": "Pearl white" }
+  },
+  "metallic_grey": {
+    "image": "/insert_colors/metallic_grey.jpg",
+    "ro": { "title": "Gri metalizat" },
+    "ru": { "title": "Металлик серый" },
+    "en": { "title": "Metallic grey" }
+  },
+  "metallic_blue": {
+    "image": "/insert_colors/metallic_blue.jpg",
+    "ro": { "title": "Albastru metalizat" },
+    "ru": { "title": "Металлик синий" },
+    "en": { "title": "Metallic blue" }
+  },
+  "metallic_gold": {
+    "image": "/insert_colors/metallic_gold.jpg",
+    "ro": { "title": "Auriu metalizat" },
+    "ru": { "title": "Металлик золотой" },
+    "en": { "title": "Metallic gold" }
+  },
+  "white": {
+    "image": "/insert_colors/white.jpg",
+    "ro": { "title": "Alb" },
+    "ru": { "title": "Белый" },
+    "en": { "title": "White" }
+  },
+  "grey": {
+    "image": "/insert_colors/grey.jpg",
+    "ro": { "title": "Gri" },
+    "ru": { "title": "Серый" },
+    "en": { "title": "Grey" }
+  },
+  "blue": {
+    "image": "/insert_colors/blue.jpg",
+    "ro": { "title": "Albastru" },
+    "ru": { "title": "Синий" },
+    "en": { "title": "Blue" }
+  },
+  "pearl_white_ofuro": {
+    "image": "/insert_colors/pearl_white_ofuro.webp",
+    "ro": { "title": "Alb perlat" },
+    "ru": { "title": "Перламутровый белый" },
+    "en": { "title": "Pearl white" }
+  },
+  "metallic_grey_ofuro": {
+    "image": "/insert_colors/metallic_grey_ofuro.webp",
+    "ro": { "title": "Gri metalizat" },
+    "ru": { "title": "Металлик серый" },
+    "en": { "title": "Metallic grey" }
+  },
+  "metallic_gold_ofuro": {
+    "image": "/insert_colors/metallic_gold_ofuro.webp",
+    "ro": { "title": "Auriu metalizat" },
+    "ru": { "title": "Металлик золотой" },
+    "en": { "title": "Metallic gold" }
+  },
+  "white_ofuro": {
+    "image": "/insert_colors/fiberglass_ofuro_white.webp",
+    "ro": { "title": "Alb" },
+    "ru": { "title": "Белый" },
+    "en": { "title": "White" }
+  },
+  "grey_ofuro": {
+    "image": "/insert_colors/fiberglass_ofuro_grey.webp",
+    "ro": { "title": "Gri" },
+    "ru": { "title": "Серый" },
+    "en": { "title": "Grey" }
+  },
+  "blue_ofuro": {
+    "image": "/insert_colors/fiberglass_ofuro_blue.webp",
+    "ro": { "title": "Albastru" },
+    "ru": { "title": "Синий" },
+    "en": { "title": "Blue" }
+  },
+  "marble_default_white": {
+    "image": "/insert_colors/white.webp",
+    "ro": { "title": "Alb" },
+    "ru": { "title": "Белый" },
+    "en": { "title": "White" }
+  },
+  "marble_default_grey": {
+    "image": "/insert_colors/grey.webp",
+    "ro": { "title": "Gri" },
+    "ru": { "title": "Серый" },
+    "en": { "title": "Grey" }
+  },
+  "marble_white": {
+    "image": "/insert_colors/marble_white.webp",
+    "ro": { "title": "Alb perlat" },
+    "ru": { "title": "Мраморно-белый" },
+    "en": { "title": "Marble white" }
+  },
+  "marble_black": {
+    "image": "/insert_colors/marble_black.webp",
+    "ro": { "title": "Negru marmorat" },
+    "ru": { "title": "Мраморно-чёрный" },
+    "en": { "title": "Marble black" }
+  },
+  "marble_brown": {
+    "image": "/insert_colors/marble_brown.webp",
+    "ro": { "title": "Maro marmorat" },
+    "ru": { "title": "Мраморно-коричневый" },
+    "en": { "title": "Marble brown" }
+  },
+  "marble_coffee": {
+    "image": "/insert_colors/marble_coffee.webp",
+    "ro": { "title": "Cafea de marmură" },
+    "ru": { "title": "Мраморный кофе" },
+    "en": { "title": "Marble coffee" }
+  },
+  "marble_green": {
+    "image": "/insert_colors/marble_green.webp",
+    "ro": { "title": "Verde marmorat" },
+    "ru": { "title": "Мраморно-зелёный" },
+    "en": { "title": "Marble green" }
+  },
+  "marble_blue": {
+    "image": "/insert_colors/marble_blue.webp",
+    "ro": { "title": "Albastru marmorat" },
+    "ru": { "title": "Мраморно-синий" },
+    "en": { "title": "Marble blue" }
+  },
+  "white_jacuzzi": {
+    "image": "/insert_colors/jwhite.webp",
+    "ro": { "title": "Alb" },
+    "ru": { "title": "Белый" },
+    "en": { "title": "White" }
+  },
+  "grey_jacuzzi": {
+    "image": "/insert_colors/jgrey.webp",
+    "ro": { "title": "Gri" },
+    "ru": { "title": "Серый" },
+    "en": { "title": "Grey" }
+  },
+  "marble_white_jacuzzi": {
+    "image": "/insert_colors/jmarble_white.webp",
+    "ro": { "title": "Alb marmorat" },
+    "ru": { "title": "Мраморно-белый" },
+    "en": { "title": "Marble white" }
+  },
+  "marble_black_jacuzzi": {
+    "image": "/insert_colors/jmarble_black.webp",
+    "ro": { "title": "Negru marmorat" },
+    "ru": { "title": "Мраморно-чёрный" },
+    "en": { "title": "Marble black" }
+  },
+  "marble_brown_jacuzzi": {
+    "image": "/insert_colors/jmarble_brown.webp",
+    "ro": { "title": "Maro marmorat" },
+    "ru": { "title": "Мраморно-коричневый" },
+    "en": { "title": "Marble brown" }
+  },
+  "marble_coffee_jacuzzi": {
+    "image": "/insert_colors/jmarble_coffee.webp",
+    "ro": { "title": "Cafea de marmură" },
+    "ru": { "title": "Мраморный кофе" },
+    "en": { "title": "Marble coffee" }
+  },
+  "marble_green_jacuzzi": {
+    "image": "/insert_colors/jmarble_green.webp",
+    "ro": { "title": "Verde marmorat" },
+    "ru": { "title": "Мраморно-зелёный" },
+    "en": { "title": "Marble green" }
+  },
+  "marble_blue_jacuzzi": {
+    "image": "/insert_colors/jmarble_blue.webp",
+    "ro": { "title": "Albastru marmorat" },
+    "ru": { "title": "Мраморно-синий" },
+    "en": { "title": "Marble blue" }
+  }
+}

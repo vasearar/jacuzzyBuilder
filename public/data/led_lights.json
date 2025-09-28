@@ -1,0 +1,114 @@
+{
+  "1_led": {
+    "price": "140",
+    "images": "/led_lights/new_1led.webp",
+    "ro": {
+      "title": "1 LED",
+      "selected_text": "1 LED"
+    },
+    "ru": {
+      "title": "1 LED",
+      "selected_text": "1 LED"
+    },
+    "en": {
+      "title": "1 LED",
+      "selected_text": "1 LED"
+    }
+  },
+  "2_led": {
+    "price": "200",
+    "images": "/led_lights/new_2led.webp",
+    "ro": {
+      "title": "2 LED-uri",
+      "selected_text": "2 LED-uri"
+    },
+    "ru": {
+      "title": "2 LED",
+      "selected_text": "2 LED"
+    },
+    "en": {
+      "title": "2 LED",
+      "selected_text": "2 LED"
+    }
+  },
+  "3_led": {
+    "price": "260",
+    "images": "/led_lights/new_3led.webp",
+    "ro": {
+      "title": "3 LED-uri",
+      "selected_text": "3 LED-uri"
+    },
+    "ru": {
+      "title": "3 LED",
+      "selected_text": "3 LED"
+    },
+    "en": {
+      "title": "3 LED",
+      "selected_text": "3 LED"
+    }
+  },
+  "mini_led_inside": {
+    "price": "300",
+    "images": "/led_lights/new_miniled.webp",
+    "ro": {
+      "title": "Mini LED interior - 10 buc",
+      "selected_text": "Mini LED interior (10 bucăți)"
+    },
+    "ru": {
+      "title": "Мини LED внутри - 10 шт.",
+      "selected_text": "Мини LED внутри (10 шт.)"
+    },
+    "en": {
+      "title": "Mini LED inside - 10 pcs",
+      "selected_text": "Mini LED inside (10 pcs)"
+    }
+  },
+  "mini_led_outside": {
+    "price": "300",
+    "images": "/led_lights/new_miniledoutside.webp",
+    "ro": {
+      "title": "Mini LED exterior - 10 buc",
+      "selected_text": "Mini LED exterior (10 bucăți)"
+    },
+    "ru": {
+      "title": "Мини LED снаружи - 10 шт.",
+      "selected_text": "Мини LED снаружи (10 шт.)"
+    },
+    "en": {
+      "title": "Mini LED outside - 10 pcs",
+      "selected_text": "Mini LED outside (10 pcs)"
+    }
+  },
+  "mini_led_inside_outside": {
+    "price": "560",
+    "images": "/led_lights/new_miniinout.webp",
+    "ro": {
+      "title": "Mini LED interior + exterior - 20 buc",
+      "selected_text": "Mini LED interior + exterior (20 bucăți)"
+    },
+    "ru": {
+      "title": "Мини LED внутри + снаружи - 20 шт.",
+      "selected_text": "Мини LED внутри + снаружи (20 шт.)"
+    },
+    "en": {
+      "title": "Mini LED inside + outside - 20 pcs",
+      "selected_text": "Mini LED inside + outside (20 pcs)"
+    }
+  },
+  "led_stripe": {
+    "price": "280",
+    "images": "/led_lights/led_stripe_new.webp",
+    "ro": {
+      "title": "Banda LED",
+      "selected_text": "Banda LED - 7 culori schimbabile"
+    },
+    "ru": {
+      "title": "Светодиодная лента",
+      "selected_text": "Светодиодная лента - 7 сменных цветов"
+    },
+    "en": {
+      "title": "LED stripe",
+      "selected_text": "LED stripe - 7 changeable colors"
+    }
+  }
+}

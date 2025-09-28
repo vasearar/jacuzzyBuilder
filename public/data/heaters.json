@@ -1,0 +1,287 @@
+{
+  "integrated_35_304": {
+    "image": "/heaters/integrated_first.webp",
+    "ro": {
+      "title": "Integrat - 35kW, 304 (standard)",
+      "selected_text": "Încălzitor integrat (35kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Интегрированный - 35кВт, 304 (стандарт)",
+      "selected_text": "Интегрированный нагреватель (35кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "Integrated - 35kw, 304 (standard)",
+      "selected_text": "Integrated heater (35kw, 304 grade)"
+    }
+  },
+  "integrated_35_316": {
+    "image": "/heaters/integrated_first.webp",
+    "ro": {
+      "title": "Integrat - 35kW, 316",
+      "selected_text": "Încălzitor integrat (35kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Интегрированный - 35кВт, 316",
+      "selected_text": "Интегрированный нагреватель (35кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "Integrated - 35kw, 316",
+      "selected_text": "Integrated heater (35kw, 304 grade)"
+    }
+  },
+  "horizon_30_304": {
+    "image": "/heaters/horizon.webp",
+    "ro": {
+      "title": "Horizon - 30kW, 304",
+      "selected_text": "Încălzitor Horizon (30kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Горизонт - 30кВт, 304",
+      "selected_text": "Нагреватель Горизонт (30кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "Horizon - 30kw, 304",
+      "selected_text": "Horizon heater (30kw, 304 grade)"
+    }
+  },
+  "horizon_30_316": {
+    "image": "/heaters/horizon.webp",
+    "ro": {
+      "title": "Horizon - 30kW, 316",
+      "selected_text": "Încălzitor Horizon (30kW, oțel inoxidabil 316)"
+    },
+    "ru": {
+      "title": "Горизонт - 30кВт, 316",
+      "selected_text": "Нагреватель Горизонт (30кВт, нержавейка 316)"
+    },
+    "en": {
+      "title": "Horizon - 30kw, 316",
+      "selected_text": "Horizon heater (30kw, 316 grade)"
+    }
+  },
+  "external_20_304": {
+    "image": "/heaters/external.jpg",
+    "ro": {
+      "title": "Extern - 20kW, 304 (standard)",
+      "selected_text": "Încălzitor extern (20kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Внешний - 20кВт, 304 (стандарт)",
+      "selected_text": "Внешний нагреватель (20кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "External - 20kw, 304 (standard)",
+      "selected_text": "External heater (20kw, 304 grade)"
+    }
+  },
+  "external_26_304": {
+    "image": "/heaters/external.jpg",
+    "ro": {
+      "title": "Extern - 26kW, 304",
+      "selected_text": "Încălzitor extern (26kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Внешний - 26кВт, 304",
+      "selected_text": "Внешний нагреватель (26кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "External - 26kw, 304",
+      "selected_text": "External heater (26kw, 304 grade)"
+    }
+  },
+  "external_30_304": {
+    "image": "/heaters/external.jpg",
+    "ro": {
+      "title": "Extern - 30kW, 304",
+      "selected_text": "Încălzitor extern (30kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Внешний - 30кВт, 304",
+      "selected_text": "Внешний нагреватель (30кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "External - 30kw, 304",
+      "selected_text": "External heater (30kw, 304 grade)"
+    }
+  },
+  "external_20_316": {
+    "image": "/heaters/external.jpg",
+    "ro": {
+      "title": "Extern - 20kW, 316",
+      "selected_text": "Încălzitor extern (20kW, oțel inoxidabil 316)"
+    },
+    "ru": {
+      "title": "Внешний - 20кВт, 316",
+      "selected_text": "Внешний нагреватель (20кВт, нержавейка 316)"
+    },
+    "en": {
+      "title": "External - 20kw, 316",
+      "selected_text": "External heater (20kw, 316 grade)"
+    }
+  },
+  "external_26_316": {
+    "image": "/heaters/external.jpg",
+    "ro": {
+      "title": "Extern - 26kW, 316",
+      "selected_text": "Încălzitor extern (26kW, oțel inoxidabil 316)"
+    },
+    "ru": {
+      "title": "Внешний - 26кВт, 316",
+      "selected_text": "Внешний нагреватель (26кВт, нержавейка 316)"
+    },
+    "en": {
+      "title": "External - 26kw, 316",
+      "selected_text": "External heater (26kw, 316 grade)"
+    }
+  },
+  "external_30_316": {
+    "image": "/heaters/external.jpg",
+    "ro": {
+      "title": "Extern - 30kW, 316",
+      "selected_text": "Încălzitor extern (30kW, oțel inoxidabil 316)"
+    },
+    "ru": {
+      "title": "Внешний - 30кВт, 316",
+      "selected_text": "Внешний нагреватель (30кВт, нержавейка 316)"
+    },
+    "en": {
+      "title": "External - 30kw, 316",
+      "selected_text": "External heater (30kw, 316 grade)"
+    }
+  },
+  "electric_3": {
+    "image": "/heaters/electric.webp",
+    "ro": {
+      "title": "Electric - 3kW",
+      "selected_text": "Încălzitor electric - 3kW"
+    },
+    "ru": {
+      "title": "Электрический - 3кВт",
+      "selected_text": "Электрический нагреватель - 3кВт"
+    },
+    "en": {
+      "title": "Electric - 3kw",
+      "selected_text": "Electric heater - 3kw"
+    }
+  },
+  "electric_6": {
+    "image": "/heaters/electric.webp",
+    "ro": {
+      "title": "Electric - 6kW",
+      "selected_text": "Încălzitor electric - 6kW"
+    },
+    "ru": {
+      "title": "Электрический - 6кВт",
+      "selected_text": "Электрический нагреватель - 6кВт"
+    },
+    "en": {
+      "title": "Electric - 6kw",
+      "selected_text": "Electric heater - 6kw"
+    }
+  },
+  "electric_9": {
+    "image": "/heaters/electric.webp",
+    "ro": {
+      "title": "Electric - 9kW",
+      "selected_text": "Încălzitor electric - 9kW"
+    },
+    "ru": {
+      "title": "Электрический - 9кВт",
+      "selected_text": "Электрический нагреватель - 9кВт"
+    },
+    "en": {
+      "title": "Electric - 9kw",
+      "selected_text": "Electric heater - 9kw"
+    }
+  },
+  "electric_3_gecko": {
+    "image": "/heaters/gecko.webp",
+    "ro": {
+      "title": "Electric - 3kW (Gecko)",
+      "selected_text": "Încălzitor electric - 3kW (Gecko)"
+    },
+    "ru": {
+      "title": "Электрический - 3кВт (Gecko)",
+      "selected_text": "Электрический нагреватель - 3кВт (Gecko)"
+    },
+    "en": {
+      "title": "Electric - 3kw (Gecko)",
+      "selected_text": "Electric heater - 3kw (Gecko)"
+    }
+  },
+  "electric_3_gecko_wifi": {
+    "image": "/heaters/gecko_wifi.webp",
+    "ro": {
+      "title": "Electric - 3kW (Gecko + wifi)",
+      "selected_text": "Încălzitor electric - 3kW (Gecko + wifi)"
+    },
+    "ru": {
+      "title": "Электрический - 3кВт (Gecko + wifi)",
+      "selected_text": "Электрический нагреватель - 3кВт (Gecko + wifi)"
+    },
+    "en": {
+      "title": "Electric - 3kw (Gecko + wifi)",
+      "selected_text": "Electric heater - 3kw (Gecko + wifi)"
+    }
+  },
+  "integrated_20_304": {
+    "image": "/heaters/integrated_ofuro.webp",
+    "ro": {
+      "title": "Integrat - 20kW, 304",
+      "selected_text": "Încălzitor integrat (20kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Интегрированный - 20кВт, 304",
+      "selected_text": "Интегрированный нагреватель (20кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "Integrated - 20kw, 304",
+      "selected_text": "Integrated heater (20kw, 304 grade)"
+    }
+  },
+  "integrated_20_316": {
+    "image": "/heaters/integrated_ofuro.webp",
+    "ro": {
+      "title": "Integrat - 20kW, 316",
+      "selected_text": "Încălzitor integrat (20kW, oțel inoxidabil 316)"
+    },
+    "ru": {
+      "title": "Интегрированный - 20кВт, 316",
+      "selected_text": "Интегрированный нагреватель (20кВт, нержавейка 316)"
+    },
+    "en": {
+      "title": "Integrated - 20kw, 316",
+      "selected_text": "Integrated heater (20kw, 316 grade)"
+    }
+  },
+  "integrated_35_304_jacuzzi": {
+    "image": "/heaters/integrated.webp",
+    "ro": {
+      "title": "Integrat - 35kW, 304",
+      "selected_text": "Încălzitor integrat (35kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Интегрированный - 35кВт, 304",
+      "selected_text": "Интегрированный нагреватель (35кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "Integrated - 35kw, 304",
+      "selected_text": "Integrated heater (35kw, 304 grade)"
+    }
+  },
+  "integrated_35_316_jacuzzi": {
+    "image": "/heaters/integrated.webp",
+    "ro": {
+      "title": "Integrat - 35kW, 316",
+      "selected_text": "Încălzitor integrat (35kW, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Интегрированный - 35кВт, 316",
+      "selected_text": "Интегрированный нагреватель (35кВт, нержавейка 304)"
+    },
+    "en": {
+      "title": "Integrated - 35kw, 316",
+      "selected_text": "Integrated heater (35kw, 304 grade)"
+    }
+  }
+}

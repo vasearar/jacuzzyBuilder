@@ -1,0 +1,157 @@
+{
+  "hot_tub_insulation": {
+    "price": "180",
+    "images": "/other_accessories/new_insulation.webp",
+    "en": { "title": "Hot tub insulation" },
+    "ro": { "title": "Izolație cadă cu hidromasaj" },
+    "ru": { "title": "Изоляция купели" }
+  },
+  "chimney_protection": {
+    "price": "100",
+    "images": "/other_accessories/new_protection.webp",
+    "en": { "title": "Chimney protection" },
+    "ro": { "title": "Protecție coș de fum" },
+    "ru": { "title": "Защита дымохода" }
+  },
+  "stainless_steel_straps": {
+    "price": "140",
+    "images": "/other_accessories/new_straps.webp",
+    "en": { "title": "Stainless steel straps" },
+    "ro": { "title": "Benzi din oțel inoxidabil" },
+    "ru": { "title": "Нержавеющие обручи" }
+  },
+  "hot_tub_painting": {
+    "price": "200",
+    "images": "/other_accessories/new_painting.webp",
+    "en": { "title": "Hot tub painting" },
+    "ro": { "title": "Vopsire cadă cu hidromasaj" },
+    "ru": { "title": "Окраска купели" }
+  },
+  "additional_meter_chimney": {
+    "price": "70",
+    "images": "/other_accessories/extra_chimney_1.webp",
+    "en": { "title": "Additional meter of chimney" },
+    "ro": { "title": "Metru suplimentar de coș" },
+    "ru": { "title": "Дополнительный метр дымохода" }
+  },
+  "additional_mini_bar": {
+    "price": "50",
+    "images": "/other_accessories/new_minibar.webp",
+    "en": { "title": "Additional mini bar" },
+    "ro": { "title": "Mini-bar suplimentar" },
+    "ru": { "title": "Дополнительный мини-бар" }
+  },
+  "wooden_drinks_holder_7": {
+    "price": "70",
+    "images": "/other_accessories/holders.jpg",
+    "en": { "title": "Wooden drinks holder (7 holes)" },
+    "ro": { "title": "Suport băuturi din lemn (7 găuri)" },
+    "ru": { "title": "Деревянный держатель для напитков (7 отверстий)" }
+  },
+  "stainless_drinks_holder_3": {
+    "price": "70",
+    "images": "/other_accessories/stainless_steel_bar.webp",
+    "en": { "title": "Stainless steel drinks holder (3 holes)" },
+    "ro": { "title": "Suport băuturi din oțel inox (3 găuri)" },
+    "ru": { "title": "Нерж. держатель для напитков (3 отверстия)" }
+  },
+  "stainless_drinks_holder_5": {
+    "price": "90",
+    "images": "/other_accessories/Stainless_steel_bar_5.webp",
+    "en": { "title": "Stainless steel drinks holder (5 holes)" },
+    "ro": { "title": "Suport băuturi din oțel inox (5 găuri)" },
+    "ru": { "title": "Нерж. держатель для напитков (5 отверстий)" }
+  },
+  "stainless_steel_elbows": {
+    "price": "80",
+    "images": "/other_accessories/elbows.jpg",
+    "en": { "title": "Stainless steel elbows" },
+    "ro": { "title": "Coturi din oțel inoxidabil" },
+    "ru": { "title": "Угольники из нержавейки" }
+  },
+  "head_pillow": {
+    "price": "24",
+    "multiple": "6",
+    "images": "/other_accessories/new_pillow.webp",
+    "en": { "title": "Head pillow" },
+    "ro": { "title": "Pernă pentru cap" },
+    "ru": { "title": "Подушка для головы" }
+  },
+  "bluetooth_audio": {
+    "price": "440",
+    "images": "/other_accessories/audio_system.jpg",
+    "en": { "title": "Bluetooth audio system" },
+    "ro": { "title": "Sistem audio Bluetooth" },
+    "ru": { "title": "Аудиосистема Bluetooth" }
+  },
+  "cover_lifter": {
+    "price": "240",
+    "images": "/other_accessories/cover_lifter.webp",
+    "en": { "title": "Cover lifter" },
+    "ro": { "title": "Dispozitiv ridicare capac" },
+    "ru": { "title": "Подъемник крышки" }
+  },
+  "rotable_mini_bar": {
+    "price": "110",
+    "images": "/other_accessories/rotatable_mini_bar.jpg",
+    "en": { "title": "Rotable mini bar" },
+    "ro": { "title": "Mini-bar rotativ" },
+    "ru": { "title": "Поворотный мини-бар" }
+  },
+  "handrail": {
+    "price": "160",
+    "images": "/other_accessories/handrail.jpg",
+    "en": { "title": "Handrail" },
+    "ro": { "title": "Balustradă" },
+    "ru": { "title": "Поручень" }
+  },
+  "bluetooth_thermometer": {
+    "price": "70",
+    "images": "/other_accessories/digital_thermometer.jpg",
+    "en": { "title": "Bluetooth thermometer" },
+    "ro": { "title": "Termometru Bluetooth" },
+    "ru": { "title": "Термометр Bluetooth" }
+  },
+  "digital_thermometer": {
+    "price": "60",
+    "images": "/other_accessories/digital_thermometer.webp",
+    "en": { "title": "Digital thermometer" },
+    "ro": { "title": "Termometru digital" },
+    "ru": { "title": "Цифровой термометр" }
+  },
+  "snack_table": {
+    "price": "220",
+    "images": "/other_accessories/snack_table.jpg",
+    "en": { "title": "Snack table" },
+    "ro": { "title": "Măsuță pentru gustări" },
+    "ru": { "title": "Столик для закусок" }
+  },
+  "leather_basket": {
+    "price": "80",
+    "images": "/other_accessories/leather_basket.jpg",
+    "en": { "title": "Leather basket" },
+    "ro": { "title": "Coș din piele" },
+    "ru": { "title": "Кожаная корзина" }
+  },
+  "wooden_paddle": {
+    "price": "40",
+    "images": "/other_accessories/new_paddle.webp",
+    "en": { "title": "Wooden paddle" },
+    "ro": { "title": "Vâslă din lemn" },
+    "ru": { "title": "Деревянное весло" }
+  },
+  "stainless_steel_base": {
+    "price": "400",
+    "images": "/other_accessories/ss-base.webp",
+    "en": { "title": "Stainless steel base" },
+    "ro": { "title": "Bază din oțel inoxidabil" },
+    "ru": { "title": "Основание из нержавейки" }
+  },
+  "white_wrap_package": {
+    "price": "60",
+    "images": "/other_accessories/white_wrap_package.jpg",
+    "en": { "title": "White wrap package" },
+    "ro": { "title": "Ambalaj cu folie albă" },
+    "ru": { "title": "Белая упаковочная плёнка" }
+  }
+}

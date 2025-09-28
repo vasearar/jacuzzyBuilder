@@ -1,0 +1,32 @@
+{
+  "2_meters_of_chimney": {
+    "image": "/standard_package/chimneys.webp",
+    "ro": { "title": "2 metri de coș de fum" },
+    "ru": { "title": "2 метра дымохода" },
+    "en": { "title": "2 meters of chimney" }
+  },
+  "mini_bar": {
+    "image": "/standard_package/new_minibar.webp",
+    "ro": { "title": "Mini-bar" },
+    "ru": { "title": "Мини-бар" },
+    "en": { "title": "Mini bar" }
+  },
+  "water_outlet": {
+    "image": "/standard_package/new_drain.webp",
+    "ro": { "title": "Ieșire de apă" },
+    "ru": { "title": "Водяной выход" },
+    "en": { "title": "Water outlet" }
+  },
+  "thermometer": {
+    "image": "/standard_package/new_thermometer.webp",
+    "ro": { "title": "Termometru" },
+    "ru": { "title": "Термометр" },
+    "en": { "title": "Thermometer" }
+  },
+  "regular_stairs": {
+    "image": "/standard_package/regular_stairs.jpg",
+    "ro": { "title": "Trepte obișnuite" },
+    "ru": { "title": "Обычные ступени" },
+    "en": { "title": "Regular stairs" }
+  }
+}

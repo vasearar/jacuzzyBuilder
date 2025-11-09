@@ -314,6 +314,7 @@ const Configurator: React.FC = () => {
       r.push({
         label: t("hot_tub_model"),
         text: loc?.selected_text || loc?.title || "",
+        price: safeNum(tub.price),
       });
     }
 

@@ -36,8 +36,15 @@ const Configurator: React.FC = () => {
     standardPack,
   } = useCatalogs();
 
+  // Base selections
   const [selTub, setSelTub] = useState<string | null>(null);
+
+  // Heaters: one main + multiple exception extras
   const [selHeater, setSelHeater] = useState<string | null>(null);
+  const [selHeaterExtras, setSelHeaterExtras] = useState<
+    Record<string, number>
+  >({});
+
   const [selSize, setSelSize] = useState<string | null>(null);
   const [selInsertColor, setSelInsertColor] = useState<string | null>(null);
   const [selWoodDecor, setSelWoodDecor] = useState<string | null>(null);
@@ -47,26 +54,22 @@ const Configurator: React.FC = () => {
   const [selLED, setSelLED] = useState<Record<string, number>>({});
   const [selFilters, setSelFilters] = useState<Record<string, number>>({});
   const [selOther, setSelOther] = useState<Record<string, number>>({});
-
   const [selStandard, setSelStandard] = useState<Record<string, number>>({});
-  React.useEffect(() => {
-    const keys = Object.keys(standardPack);
-    if (keys.length && Object.keys(selStandard).length === 0) {
-      const all: Record<string, number> = {};
-      keys.forEach((k) => (all[k] = 1));
-      setSelStandard(all);
-    }
-  }, [standardPack]);
 
   const tub = selTub ? tubs[selTub] : null;
+  const isIceTub = selTub === "ice_tub"; // IMPORTANT: correct key
+
+  // Per-tub mapped options
   const tubHeaterOpts = useMemo(() => mapWithPrice(tub?.heaters), [tub]);
   const tubSizeOpts = useMemo(() => mapWithPrice(tub?.sizes), [tub]);
   const tubInsertOpts = useMemo(() => mapWithPrice(tub?.insert_colour), [tub]);
   const tubCoverOpts = useMemo(() => mapWithPrice(tub?.covers), [tub]);
   const tubWoodOpts = useMemo(() => mapWithPrice(tub?.wood_decorations), [tub]);
 
+  // Reset when tub changes
   React.useEffect(() => {
     setSelHeater(null);
+    setSelHeaterExtras({});
     setSelSize(null);
     setSelInsertColor(null);
     setSelWoodDecor(null);
@@ -77,19 +80,124 @@ const Configurator: React.FC = () => {
     setSelOther({});
   }, [selTub]);
 
+  // Standard package defaults depend on tub (Ice Tub vs others)
+  React.useEffect(() => {
+    const next: Record<string, number> = {};
+
+    if (isIceTub) {
+      // Only items with icetube: true
+      Object.entries(standardPack).forEach(([k, v]) => {
+        if ((v as any)?.icetube) next[k] = 1;
+      });
+    } else {
+      // All except standard_steps (that is only for Ice Tub)
+      Object.entries(standardPack).forEach(([k]) => {
+        if (k !== "standard_steps") next[k] = 1;
+      });
+    }
+
+    setSelStandard(next);
+  }, [isIceTub, standardPack]);
+
+  // Helper for multi-select
   const toggleFrom =
     (setter: React.Dispatch<React.SetStateAction<Record<string, number>>>) =>
     (k: string, qty: number) =>
-      setter((s: Record<string, number>) => {
+      setter((s) => {
         const next = { ...s };
         if (qty <= 0) delete next[k];
         else next[k] = qty;
         return next;
       });
 
+  // ===== ICE TUB VISIBILITY RULES =====
+
+  // Spa systems:
+  // - Ice Tub: nothing
+  // - Others: all
+  const spaList = isIceTub ? [] : Object.keys(spaSystems);
+
+  // LED lights:
+  // - Ice Tub: only icetube: true
+  // - Others: all
+  const ledList = Object.keys(ledLights).filter((k) => {
+    const v: any = ledLights[k];
+    if (!v) return false;
+    if (isIceTub) return !!v.icetube;
+    return true;
+  });
+
+  // Other accessories:
+  // - Ice Tub: only icetube: true
+  // - Others: all
+  const otherList = Object.keys(otherAcc).filter((k) => {
+    const v: any = otherAcc[k];
+    if (!v) return false;
+    if (isIceTub) return !!v.icetube;
+    return true;
+  });
+
+  // Standard package:
+  // - Ice Tub: only icetube: true
+  // - Others: all except standard_steps
+  const standardList = Object.keys(standardPack).filter((k) => {
+    const v: any = standardPack[k];
+    if (!v) return false;
+    if (isIceTub) return !!v.icetube;
+    if (k === "standard_steps") return false;
+    return true;
+  });
+
+  // Clamp selected standard items to visible ones
+  const standardSelectedForUI: Record<string, number> = {};
+  Object.entries(selStandard).forEach(([k, q]) => {
+    if (q > 0 && standardList.includes(k)) {
+      standardSelectedForUI[k] = q;
+    }
+  });
+
+  // ===== HEATER SELECTION (main + exception checkboxes) =====
+
+  // Build combined selection map for OptionGrid visual state
+  const heaterSelectedForUI: Record<string, number> = {};
+  if (selHeater) heaterSelectedForUI[selHeater] = 1;
+  Object.entries(selHeaterExtras).forEach(([k, q]) => {
+    if (q > 0) heaterSelectedForUI[k] = q;
+  });
+
+  const handleHeaterToggle = (key: string) => {
+    const item: any = heaters[key];
+    if (!item) return;
+
+    if (item.exception) {
+      // Checkbox-style behavior for exception heaters
+      setSelHeaterExtras((prev) => {
+        const next = { ...prev };
+        if (next[key]) {
+          delete next[key];
+        } else {
+          next[key] = 1;
+        }
+        return next;
+      });
+    } else {
+      // Radio behavior for normal heaters
+      setSelHeater((prev) => (prev === key ? null : key));
+      // Ensure it's not also in extras
+      setSelHeaterExtras((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+    }
+  };
+
+  // ===== TOTAL PRICE =====
+
   const total = useMemo(() => {
     if (!tub) return 0;
     let sum = safeNum(tub.price);
+
     const addFrom = (
       opts: Array<{ key: string; addPrice: number }> | undefined,
       chosen: string[] | Record<string, number>
@@ -97,18 +205,31 @@ const Configurator: React.FC = () => {
       if (!opts) return 0;
       const map: Record<string, number> = {};
       for (const o of opts) map[o.key] = o.addPrice;
-      if (Array.isArray(chosen))
+
+      if (Array.isArray(chosen)) {
         return chosen.reduce((a, k) => a + (map[k] || 0), 0);
+      }
+
       return Object.entries(chosen).reduce(
         (a, [k, q]) => a + (map[k] || 0) * q,
         0
       );
     };
 
-    sum += addFrom(tubHeaterOpts, selHeater ? [selHeater] : []);
-    sum += addFrom(tubSizeOpts, selSize ? [selSize] : []);
-    sum += addFrom(tubInsertOpts, selInsertColor ? [selInsertColor] : []);
-    sum += addFrom(tubWoodOpts, selWoodDecor ? [selWoodDecor] : []);
+    // Main heater
+    if (selHeater) {
+      sum += addFrom(tubHeaterOpts, [selHeater]);
+    }
+
+    // Exception heaters (checkboxes)
+    if (Object.keys(selHeaterExtras).length) {
+      sum += addFrom(tubHeaterOpts, selHeaterExtras);
+    }
+
+    // Other per-tub choices
+    if (selSize) sum += addFrom(tubSizeOpts, [selSize]);
+    if (selInsertColor) sum += addFrom(tubInsertOpts, [selInsertColor]);
+    if (selWoodDecor) sum += addFrom(tubWoodOpts, [selWoodDecor]);
     sum += addFrom(tubCoverOpts, selCovers);
 
     const addFromCatalog = (
@@ -120,10 +241,12 @@ const Configurator: React.FC = () => {
         0
       );
 
+    // Only visible/valid selections get non-zero state because we clear on tub change
     sum += addFromCatalog(spaSystems, selSpa);
     sum += addFromCatalog(ledLights, selLED);
     sum += addFromCatalog(filters, selFilters);
     sum += addFromCatalog(otherAcc, selOther);
+    // standardPack is priceMode "free" (no charge), negative-priced "no_steps" is in otherAcc
 
     return sum;
   }, [
@@ -134,6 +257,7 @@ const Configurator: React.FC = () => {
     tubWoodOpts,
     tubCoverOpts,
     selHeater,
+    selHeaterExtras,
     selSize,
     selInsertColor,
     selWoodDecor,
@@ -148,8 +272,11 @@ const Configurator: React.FC = () => {
     selOther,
   ]);
 
+  // ===== SUMMARY ROWS =====
+
   const rows: SelRow[] = useMemo(() => {
     const r: SelRow[] = [];
+
     const pushSingle = (
       labelKey: string,
       key: string | null,
@@ -164,13 +291,15 @@ const Configurator: React.FC = () => {
         : safeNum(catalog[key]?.price);
       r.push({ label: t(labelKey), text: txt, price });
     };
+
     const pushMulti = (
       labelKey: string,
       selected: Record<string, number>,
       catalog: any,
       perTub?: Array<{ key: string; addPrice: number }>
-    ) =>
+    ) => {
       Object.entries(selected).forEach(([k, q]) => {
+        if (q <= 0 || !catalog[k]) return;
         const loc = byLang(uiLang, catalog[k]);
         const txt = loc?.selected_text || loc?.title || k;
         const price = perTub
@@ -178,6 +307,7 @@ const Configurator: React.FC = () => {
           : safeNum(catalog[k]?.price);
         r.push({ label: t(labelKey), text: txt, price, qty: q });
       });
+    };
 
     if (tub) {
       const loc = byLang(uiLang, tub);
@@ -186,7 +316,12 @@ const Configurator: React.FC = () => {
         text: loc?.selected_text || loc?.title || "",
       });
     }
+
+    // Main heater
     pushSingle("heater", selHeater, heaters, tubHeaterOpts);
+    // Exception heaters
+    pushMulti("heater", selHeaterExtras, heaters, tubHeaterOpts);
+
     pushSingle("size", selSize, sizes, tubSizeOpts);
     pushSingle("insert_colour", selInsertColor, insertColors, tubInsertOpts);
     pushSingle("wood_decoration", selWoodDecor, woodDecor, tubWoodOpts);
@@ -196,7 +331,7 @@ const Configurator: React.FC = () => {
     pushMulti("led_lights", selLED, ledLights);
     pushMulti("filters", selFilters, filters);
     pushMulti("other_accessories", selOther, otherAcc);
-    pushMulti("standard_package", selStandard, standardPack);
+    pushMulti("standard_package", standardSelectedForUI, standardPack);
 
     return r;
   }, [
@@ -204,6 +339,7 @@ const Configurator: React.FC = () => {
     uiLang,
     t,
     selHeater,
+    selHeaterExtras,
     selSize,
     selInsertColor,
     selWoodDecor,
@@ -222,13 +358,15 @@ const Configurator: React.FC = () => {
     filters,
     otherAcc,
     standardPack,
-    selStandard,
+    standardSelectedForUI,
     tubHeaterOpts,
     tubSizeOpts,
     tubInsertOpts,
     tubWoodOpts,
     tubCoverOpts,
   ]);
+
+  // ===== RENDER =====
 
   return (
     <div className="grid grid-cols-full min-h-screen">
@@ -239,6 +377,7 @@ const Configurator: React.FC = () => {
       </div>
 
       <div className="col-span-12 lg:col-span-8 w-full p-2 lg:p-6">
+        {/* HOT TUB MODEL */}
         <OptionGrid
           heading={t("hot_tub_model")}
           list={Object.keys(tubs)}
@@ -251,19 +390,22 @@ const Configurator: React.FC = () => {
           variant="main"
         />
 
+        {/* HEATERS: one main (radio) + exception: true as checkboxes */}
         <OptionGrid
           heading={t("heater")}
           hint={!tub ? t("please_select_tub_first") : undefined}
           list={tub ? tubHeaterOpts : []}
           catalog={heaters}
           lang={uiLang}
-          single
-          selectedSingle={selHeater}
-          onSelectSingle={setSelHeater}
+          // use multi mode and manage behavior manually
+          single={false}
+          selectedMulti={heaterSelectedForUI}
+          onToggleMulti={(k) => handleHeaterToggle(k)}
           priceMode="perTub"
           variant="main"
         />
 
+        {/* SIZE */}
         <OptionGrid
           heading={t("size")}
           hint={!tub ? t("please_select_tub_first") : undefined}
@@ -277,6 +419,7 @@ const Configurator: React.FC = () => {
           variant="main"
         />
 
+        {/* INSERT COLOUR */}
         <OptionGrid
           heading={t("insert_colour")}
           hint={!tub ? t("please_select_tub_first") : undefined}
@@ -290,6 +433,7 @@ const Configurator: React.FC = () => {
           variant="main"
         />
 
+        {/* WOOD DECORATION */}
         <OptionGrid
           heading={t("wood_decoration")}
           hint={!tub ? t("please_select_tub_first") : undefined}
@@ -303,12 +447,13 @@ const Configurator: React.FC = () => {
           variant="main"
         />
 
+        {/* STANDARD PACKAGE (Ice Tub aware) */}
         <OptionGrid
           heading={t("standard_package")}
-          list={Object.keys(standardPack)}
+          list={standardList}
           catalog={standardPack}
           lang={uiLang}
-          selectedMulti={selStandard}
+          selectedMulti={standardSelectedForUI}
           onToggleMulti={toggleFrom(setSelStandard)}
           priceMode="free"
           variant="main"
@@ -318,9 +463,10 @@ const Configurator: React.FC = () => {
           {t("other_accessories")}
         </h2>
 
+        {/* SPA SYSTEMS (hidden for Ice Tub) */}
         <OptionGrid
           heading={t("spa_systems")}
-          list={Object.keys(spaSystems)}
+          list={spaList}
           catalog={spaSystems}
           lang={uiLang}
           selectedMulti={selSpa}
@@ -329,9 +475,10 @@ const Configurator: React.FC = () => {
           variant="sub"
         />
 
+        {/* LED LIGHTS (Ice Tub: only icetube:true) */}
         <OptionGrid
           heading={t("led_lights")}
-          list={Object.keys(ledLights)}
+          list={ledList}
           catalog={ledLights}
           lang={uiLang}
           selectedMulti={selLED}
@@ -340,6 +487,7 @@ const Configurator: React.FC = () => {
           variant="sub"
         />
 
+        {/* COVERS (per tub) */}
         <OptionGrid
           heading={t("covers")}
           hint={!tub ? t("please_select_tub_first") : undefined}
@@ -352,9 +500,12 @@ const Configurator: React.FC = () => {
           variant="sub"
         />
 
+        {/* FILTERS with acrylic_jacuzzi exception */}
         <OptionGrid
           heading={t("filters")}
-          list={Object.keys(filters)}
+          list={Object.keys(filters).filter(
+            (key) => !(selTub === "acrylic_jacuzzi" && key === "small_filter")
+          )}
           catalog={filters}
           lang={uiLang}
           selectedMulti={selFilters}
@@ -363,9 +514,10 @@ const Configurator: React.FC = () => {
           variant="sub"
         />
 
+        {/* OTHER ACCESSORIES (Ice Tub: only icetube:true) */}
         <OptionGrid
           heading={t("other_accessories")}
-          list={Object.keys(otherAcc)}
+          list={otherList}
           catalog={otherAcc}
           lang={uiLang}
           selectedMulti={selOther}

@@ -1,4 +1,49 @@
 {
+  "no_heater": {
+    "image": "/heaters/x.jpg",
+    "ro": {
+      "title": "Fără încălzitor",
+      "selected_text": "Fără încălzitor"
+    },
+    "ru": {
+      "title": "Без обогревателя",
+      "selected_text": "Без обогревателя"
+    },
+    "en": {
+      "title": "No heater",
+      "selected_text": "No heater"
+    }
+  },
+  "verta_38_304": {
+    "image": "/heaters/verta.jpg",
+    "ro": {
+      "title": "Verta - 38kw, 304",
+      "selected_text": "Încălzitor Verta (38kw, oțel inoxidabil 304)"
+    },
+    "ru": {
+      "title": "Verta - 38кВт, 304",
+      "selected_text": "Нагреватель Verta (38кВт, нержавеющая сталь 304)"
+    },
+    "en": {
+      "title": "Verta - 38kw, 304",
+      "selected_text": "Integrated heater (35kw, 304 grade)"
+    }
+  },
+  "verta_38_316": {
+    "image": "/heaters/verta.jpg",
+    "ro": {
+      "title": "Verta - 38kw, 316",
+      "selected_text": "Încălzitor Verta (38kw, oțel inoxidabil 316)"
+    },
+    "ru": {
+      "title": "Verta - 38кВт, 316",
+      "selected_text": "Нагреватель Verta (38кВт, нержавеющая сталь 316)"
+    },
+    "en": {
+      "title": "Verta - 38kw, 316",
+      "selected_text": "Integrated heater (35kw, 316 grade)"
+    }
+  },
   "integrated_35_304": {
     "image": "/heaters/integrated_first.webp",
     "ro": {
@@ -196,6 +241,7 @@
   },
   "electric_3_gecko": {
     "image": "/heaters/gecko.webp",
+    "exception": true,
     "ro": {
       "title": "Electric - 3kW (Gecko)",
       "selected_text": "Încălzitor electric - 3kW (Gecko)"
@@ -207,21 +253,6 @@
     "en": {
       "title": "Electric - 3kw (Gecko)",
       "selected_text": "Electric heater - 3kw (Gecko)"
-    }
-  },
-  "electric_3_gecko_wifi": {
-    "image": "/heaters/gecko_wifi.webp",
-    "ro": {
-      "title": "Electric - 3kW (Gecko + wifi)",
-      "selected_text": "Încălzitor electric - 3kW (Gecko + wifi)"
-    },
-    "ru": {
-      "title": "Электрический - 3кВт (Gecko + wifi)",
-      "selected_text": "Электрический нагреватель - 3кВт (Gecko + wifi)"
-    },
-    "en": {
-      "title": "Electric - 3kw (Gecko + wifi)",
-      "selected_text": "Electric heater - 3kw (Gecko + wifi)"
     }
   },
   "integrated_20_304": {
@@ -282,6 +313,38 @@
     "en": {
       "title": "Integrated - 35kw, 316",
       "selected_text": "Integrated heater (35kw, 304 grade)"
+    }
+  },
+  "wifi_module": {
+    "image": "/heaters/wifi.jpg",
+    "exception": true,
+    "ro": {
+      "title": "Modul WiFi (Gecko)",
+      "selected_text": "Modul WiFi (Gecko)"
+    },
+    "ru": {
+      "title": "Модуль Wi-Fi (Gecko)",
+      "selected_text": "Модуль Wi-Fi (Gecko)"
+    },
+    "en": {
+      "title": "Wifi module (Gecko)",
+      "selected_text": "Wifi module (Gecko)"
+    }
+  },
+  "touchpanel": {
+    "image": "/heaters/touchpad.jpg",
+    "exception": true,
+    "ro": {
+      "title": "Panou tactil (Gecko)",
+      "selected_text": "Panou tactil (Gecko)"
+    },
+    "ru": {
+      "title": "Сенсорная панель (Gecko)",
+      "selected_text": "Сенсорная панель (Gecko)"
+    },
+    "en": {
+      "title": "Touchpanel (Gecko)",
+      "selected_text": "Touchpanel (Gecko)"
     }
   }
 }

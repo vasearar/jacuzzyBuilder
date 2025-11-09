@@ -14,45 +14,47 @@
     },
     "image": "/tubs/acrylic.webp",
     "heaters": [
-      { "integrated_35_304": "760" },
-      { "integrated_35_316": "1000" },
-      { "horizon_30_304": "1060" },
-      { "horizon_30_316": "1300" },
-      { "external_20_304": "640" },
-      { "external_26_304": "900" },
-      { "external_30_304": "1080" },
-      { "external_20_316": "1000" },
-      { "external_26_316": "1230" },
-      { "external_30_316": "1460" },
-      { "electric_3": "780" },
-      { "electric_6": "1240" },
-      { "electric_9": "1240" },
-      { "electric_3_gecko": "1200" },
-      { "electric_3_gecko_wifi": "1440" }
+      { "integrated_35_304": "720" },
+      { "integrated_35_316": "960" },
+      { "verta_38_304": "1580" },
+      { "verta_38_316": "1820" },
+      { "horizon_30_304": "1020" },
+      { "horizon_30_316": "1260" },
+      { "external_20_304": "600" },
+      { "external_26_304": "880" },
+      { "external_30_304": "1040" },
+      { "external_20_316": "960" },
+      { "external_26_316": "1080" },
+      { "external_30_316": "1400" },
+      { "electric_3": "660" },
+      { "electric_6": "1060" },
+      { "electric_3_gecko": "1020" },
+      { "wifi_module": "200" },
+      { "touchpanel": "340" }
     ],
     "insert_colour": [
       { "pearl_white": "0" },
       { "metallic_grey": "0" },
-      { "metallic_blue": "0" },
       { "metallic_gold": "0" }
     ],
     "sizes": [{ "200cm": "0" }, { "200x200cm": "380" }],
     "covers": [
-      { "insulated_cover_black_200": "540" },
-      { "insulated_cover_black_225": "580" },
-      { "insulated_cover_brown_200": "540" },
-      { "insulated_cover_brown_225": "580" },
-      { "wooden_cover_spruce": "300" },
-      { "wooden_cover_thermo": "360" }
+      { "insulated_cover_black_200": "460" },
+      { "insulated_cover_brown_200": "460" },
+      { "insulated_cover_black_225": "500" },
+      { "insulated_cover_brown_225": "500" },
+      { "wooden_cover_spruce": "260" },
+      { "wooden_cover_thermo": "300" }
     ],
     "wood_decorations": [
       { "spruce": "200" },
       { "thermo": "440" },
       { "wpc_black": "440" },
       { "wpc_brown": "440" },
+      { "larch": "780" },
       { "red_cedar": "1700" }
     ],
-    "price": "2540"
+    "price": "2720"
   },
   "fiberglass": {
     "ro": {
@@ -69,40 +71,43 @@
     },
     "image": "/tubs/fiberglass.jpg",
     "heaters": [
-      { "integrated_35_304": "640" },
-      { "integrated_35_316": "880" },
-      { "horizon_30_304": "940" },
-      { "horizon_30_316": "1180" },
-      { "external_20_304": "640" },
-      { "external_26_304": "900" },
-      { "external_30_304": "1080" },
-      { "external_20_316": "1000" },
-      { "external_26_316": "1230" },
-      { "external_30_316": "1460" },
-      { "electric_3": "780" },
-      { "electric_6": "1240" },
-      { "electric_9": "1240" },
-      { "electric_3_gecko": "1200" },
-      { "electric_3_gecko_wifi": "1420" }
+      { "integrated_35_304": "600" },
+      { "integrated_35_316": "840" },
+      { "verta_38_304": "1460" },
+      { "verta_38_316": "1700" },
+      { "horizon_30_304": "900" },
+      { "horizon_30_316": "1140" },
+      { "external_20_304": "600" },
+      { "external_26_304": "880" },
+      { "external_30_304": "1040" },
+      { "external_20_316": "960" },
+      { "external_26_316": "1180" },
+      { "external_30_316": "1400" },
+      { "electric_3": "660" },
+      { "electric_6": "1060" },
+      { "electric_3_gecko": "1020" },
+      { "wifi_module": "200" },
+      { "touchpanel": "340" }
     ],
-    "insert_colour": [{ "white": "0" }, { "grey": "0" }, { "blue": "0" }],
+    "insert_colour": [{ "white": "0" }, { "grey": "0" }],
     "sizes": [{ "200cm": "0" }, { "225cm": "480" }],
     "covers": [
-      { "insulated_cover_black_200": "540" },
-      { "insulated_cover_black_225": "580" },
-      { "insulated_cover_brown_200": "540" },
-      { "insulated_cover_brown_225": "580" },
-      { "wooden_cover_spruce": "300" },
-      { "wooden_cover_thermo": "360" }
+      { "insulated_cover_black_200": "460" },
+      { "insulated_cover_brown_200": "460" },
+      { "insulated_cover_black_225": "500" },
+      { "insulated_cover_brown_225": "500" },
+      { "wooden_cover_spruce": "260" },
+      { "wooden_cover_thermo": "300" }
     ],
     "wood_decorations": [
       { "spruce": "200" },
       { "thermo": "440" },
       { "wpc_black": "440" },
       { "wpc_brown": "440" },
+      { "larch": "780" },
       { "red_cedar": "1700" }
     ],
-    "price": "2120"
+    "price": "2300"
   },
   "ofuro_acrylic": {
     "ro": {
@@ -119,32 +124,33 @@
     },
     "image": "/tubs/ofuro_acrylic.jpg",
     "heaters": [
-      { "integrated_20_304": "880" },
-      { "integrated_20_316": "1120" },
-      { "external_20_304": "640" },
-      { "external_26_304": "900" },
-      { "external_30_304": "1080" },
-      { "external_20_316": "1000" },
-      { "external_26_316": "1230" },
-      { "external_30_316": "1460" },
-      { "electric_3": "780" },
-      { "electric_6": "1240" },
-      { "electric_9": "1240" },
-      { "electric_3_gecko": "1200" },
-      { "electric_3_gecko_wifi": "1420" }
+      { "integrated_20_304": "840" },
+      { "integrated_20_316": "1080" },
+      { "external_20_304": "600" },
+      { "external_26_304": "880" },
+      { "external_30_304": "1040" },
+      { "external_20_316": "960" },
+      { "external_26_316": "1180" },
+      { "external_30_316": "1400" },
+      { "electric_3": "660" },
+      { "electric_6": "1060" },
+      { "electric_3_gecko": "1020" },
+      { "wifi_module": "200" },
+      { "touchpanel": "340" }
     ],
     "sizes": [{ "190x120cm": "200" }],
     "covers": [
-      { "insulated_cover_black": "400" },
-      { "insulated_cover_brown": "400" },
-      { "wooden_cover_spruce": "300" },
-      { "wooden_cover_thermo": "360" }
+      { "insulated_cover_black": "340" },
+      { "insulated_cover_brown": "340" },
+      { "wooden_cover_spruce": "260" },
+      { "wooden_cover_thermo": "300" }
     ],
     "wood_decorations": [
       { "spruce": "100" },
       { "thermo": "300" },
       { "wpc_black": "300" },
       { "wpc_brown": "300" },
+      { "larch": "640" },
       { "red_cedar": "1260" }
     ],
     "insert_colour": [
@@ -152,7 +158,7 @@
       { "metallic_grey_ofuro": "0" },
       { "metallic_gold_ofuro": "0" }
     ],
-    "price": "2020"
+    "price": "2200"
   },
   "ofuro_fiberglass": {
     "ro": {
@@ -169,40 +175,37 @@
     },
     "image": "/tubs/ofuro_fiberglass.jpg",
     "heaters": [
-      { "integrated_20_304": "880" },
-      { "integrated_20_316": "1120" },
-      { "external_20_304": "640" },
-      { "external_26_304": "900" },
-      { "external_30_304": "1080" },
-      { "external_20_316": "1000" },
-      { "external_26_316": "1230" },
-      { "external_30_316": "1460" },
-      { "electric_3": "780" },
-      { "electric_6": "1240" },
-      { "electric_9": "1240" },
-      { "electric_3_gecko": "1200" },
-      { "electric_3_gecko_wifi": "1420" }
+      { "integrated_20_304": "840" },
+      { "integrated_20_316": "1080" },
+      { "external_20_304": "600" },
+      { "external_26_304": "880" },
+      { "external_30_304": "1040" },
+      { "external_20_316": "960" },
+      { "external_26_316": "1180" },
+      { "external_30_316": "1400" },
+      { "electric_3": "660" },
+      { "electric_6": "1060" },
+      { "electric_3_gecko": "1020" },
+      { "wifi_module": "200" },
+      { "touchpanel": "340" }
     ],
-    "insert_colour": [
-      { "white_ofuro": "0" },
-      { "grey_ofuro": "0" },
-      { "blue_ofuro": "0" }
-    ],
+    "insert_colour": [{ "white_ofuro": "0" }, { "grey_ofuro": "0" }],
     "sizes": [{ "190x120cm": "200" }],
     "covers": [
-      { "insulated_cover_black": "400" },
-      { "insulated_cover_brown": "400" },
-      { "wooden_cover_spruce": "300" },
-      { "wooden_cover_thermo": "360" }
+      { "insulated_cover_black": "340" },
+      { "insulated_cover_brown": "340" },
+      { "wooden_cover_spruce": "260" },
+      { "wooden_cover_thermo": "300" }
     ],
     "wood_decorations": [
       { "spruce": "100" },
       { "thermo": "300" },
       { "wpc_black": "300" },
       { "wpc_brown": "300" },
+      { "larch": "640" },
       { "red_cedar": "1260" }
     ],
-    "price": "1760"
+    "price": "1940"
   },
   "acrylic_marble": {
     "ro": {
@@ -219,25 +222,28 @@
     },
     "image": "/tubs/marble.webp",
     "heaters": [
-      { "integrated_35_304": "760" },
-      { "integrated_35_316": "1000" },
-      { "horizon_30_304": "1060" },
-      { "horizon_30_316": "1300" },
-      { "external_20_304": "640" },
-      { "external_26_304": "900" },
-      { "external_30_304": "1080" },
-      { "external_20_316": "1000" },
-      { "external_26_316": "1230" },
-      { "external_30_316": "1460" },
-      { "electric_3": "780" },
-      { "electric_6": "1240" },
-      { "electric_9": "1240" },
-      { "electric_3_gecko": "1200" },
-      { "electric_3_gecko_wifi": "1440" }
+      { "integrated_35_304": "720" },
+      { "integrated_35_316": "960" },
+      { "verta_38_304": "1580" },
+      { "verta_38_316": "1820" },
+      { "horizon_30_304": "1020" },
+      { "horizon_30_316": "1260" },
+      { "external_20_304": "600" },
+      { "external_26_304": "880" },
+      { "external_30_304": "1040" },
+      { "external_20_316": "960" },
+      { "external_26_316": "1180" },
+      { "external_30_316": "1400" },
+      { "electric_3": "660" },
+      { "electric_6": "1060" },
+      { "electric_3_gecko": "1020" },
+      { "electric_3_gecko_wifi": "1440" },
+      { "wifi_module": "200" },
+      { "touchpanel": "340" }
     ],
     "insert_colour": [
-      { "marble_default_white": "0" },
-      { "marble_default_grey": "0" },
+      { "marble_default_white": "100" },
+      { "marble_default_grey": "100" },
       { "marble_white": "400" },
       { "marble_black": "400" },
       { "marble_brown": "400" },
@@ -245,23 +251,24 @@
       { "marble_green": "400" },
       { "marble_blue": "400" }
     ],
-    "sizes": [{ "200cm": "0" }, { "225cm": "400" }],
+    "sizes": [{ "200cm": "0" }, { "225cm": "460" }, { "200x200cm": "380" }],
     "covers": [
-      { "insulated_cover_black_200": "540" },
-      { "insulated_cover_black_225": "580" },
-      { "insulated_cover_brown_200": "540" },
-      { "insulated_cover_brown_225": "580" },
-      { "wooden_cover_spruce": "300" },
-      { "wooden_cover_thermo": "360" }
+      { "insulated_cover_black_200": "460" },
+      { "insulated_cover_brown_200": "460" },
+      { "insulated_cover_black_225": "500" },
+      { "insulated_cover_brown_225": "500" },
+      { "wooden_cover_spruce": "260" },
+      { "wooden_cover_thermo": "300" }
     ],
     "wood_decorations": [
       { "spruce": "200" },
       { "thermo": "440" },
       { "wpc_black": "440" },
       { "wpc_brown": "440" },
+      { "larch": "780" },
       { "red_cedar": "1700" }
     ],
-    "price": "2540"
+    "price": "2720"
   },
   "acrylic_jacuzzi": {
     "ro": {
@@ -278,19 +285,19 @@
     },
     "image": "/tubs/acrylic_jacuzzi.webp",
     "heaters": [
-      { "integrated_35_304_jacuzzi": "720" },
+      { "integrated_35_304_jacuzzi": "760" },
       { "integrated_35_316_jacuzzi": "1000" },
-      { "external_20_304": "640" },
-      { "external_26_304": "900" },
-      { "external_30_304": "1080" },
-      { "external_20_316": "1000" },
-      { "external_26_316": "1230" },
-      { "external_30_316": "1460" },
-      { "electric_3": "780" },
-      { "electric_6": "1240" },
-      { "electric_9": "1240" },
-      { "electric_3_gecko": "1200" },
-      { "electric_3_gecko_wifi": "1440" }
+      { "external_20_304": "600" },
+      { "external_26_304": "880" },
+      { "external_30_304": "1040" },
+      { "external_20_316": "960" },
+      { "external_26_316": "1180" },
+      { "external_30_316": "1400" },
+      { "electric_3": "660" },
+      { "electric_6": "1060" },
+      { "electric_3_gecko": "1020" },
+      { "wifi_module": "200" },
+      { "touchpanel": "340" }
     ],
     "insert_colour": [
       { "white_jacuzzi": "300" },
@@ -303,19 +310,49 @@
       { "marble_blue_jacuzzi": "300" }
     ],
     "wood_decorations": [
-      { "spruce": "260" },
-      { "thermo": "560" },
-      { "wpc_black": "560" },
-      { "wpc_brown": "560" },
-      { "red_cedar": "1860" }
+      { "spruce": "200" },
+      { "thermo": "500" },
+      { "wpc_black": "500" },
+      { "wpc_brown": "500" },
+      { "larch": "840" }
     ],
     "sizes": [{ "220x220cm": "0" }],
     "covers": [
-      { "insulated_cover_black": "580" },
-      { "insulated_cover_brown": "580" },
-      { "wooden_cover_spruce": "300" },
-      { "wooden_cover_thermo": "360" }
+      { "insulated_cover_black": "500" },
+      { "insulated_cover_brown": "500" },
+      { "wooden_cover_spruce": "260" },
+      { "wooden_cover_thermo": "300" }
     ],
-    "price": "3840"
+    "price": "3980"
+  },
+  "ice_tub": {
+    "ro": {
+      "title": "Cadă cu gheață",
+      "selected_text": "Cadă cu gheață"
+    },
+    "en": {
+      "title": "Ice Tub",
+      "selected_text": "Ice Tub"
+    },
+    "ru": {
+      "title": "Ледяная ванна",
+      "selected_text": "Ледяная ванна"
+    },
+    "image": "/tubs/icetub.jpg",
+    "heaters": [{ "no_heater": "0" }],
+    "insert_colour": [{ "white": "0" }, { "grey": "0" }],
+    "sizes": [{ "100cm": "0" }],
+    "covers": [
+      { "insulated_cover_black": "260" },
+      { "insulated_cover_brown": "260" }
+    ],
+    "wood_decorations": [
+      { "spruce": "0" },
+      { "thermo": "0" },
+      { "wpc_black": "0" },
+      { "wpc_brown": "0" },
+      { "larch": "200" }
+    ],
+    "price": "1640"
   }
 }

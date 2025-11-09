@@ -1,6 +1,6 @@
 {
   "air_12_jets": {
-    "price": "600",
+    "price": "500",
     "images": "/spa_systems/new_air.webp",
     "ro": {
       "title": "Aer 12 jeturi",
@@ -16,7 +16,7 @@
     }
   },
   "air_20_jets": {
-    "price": "840",
+    "price": "800",
     "images": "/spa_systems/new_air.webp",
     "ro": {
       "title": "Aer 20 jeturi",
@@ -32,7 +32,7 @@
     }
   },
   "water_8_jets": {
-    "price": "600",
+    "price": "500",
     "multiple": "10",
     "images": "/spa_systems/spa_water_6.jpg",
     "ro": {
@@ -49,7 +49,7 @@
     }
   },
   "water_14_jets": {
-    "price": "940",
+    "price": "800",
     "multiple": "10",
     "images": "/spa_systems/spa_water_6.jpg",
     "ro": {
@@ -66,7 +66,7 @@
     }
   },
   "combinated": {
-    "price": "920",
+    "price": "780",
     "images": "/spa_systems/spa_combinated.webp",
     "ro": {
       "title": "Combinat 8 jeturi apă + 4 jeturi aer",
@@ -82,7 +82,7 @@
     }
   },
   "led_water": {
-    "price": "900",
+    "price": "760",
     "images": "/spa_systems/led_water_6.jpg",
     "ro": {
       "title": "LED apă 8 jeturi",
@@ -95,6 +95,22 @@
     "en": {
       "title": "LED water 8 jets",
       "selected_text": "SPA LED water (8 jets, 1.1 kw)"
+    }
+  },
+  "led_water_14": {
+    "price": "1160",
+    "images": "/spa_systems/led_water_6.jpg",
+    "ro": {
+      "title": "LED apă 14 jeturi",
+      "selected_text": "SPA LED apă (14 jeturi, 2.2 kw)"
+    },
+    "ru": {
+      "title": "LED вода 14 форсунок",
+      "selected_text": "SPA LED вода (14 форсунок, 2.2 кВт)"
+    },
+    "en": {
+      "title": "LED water 14 jets",
+      "selected_text": "SPA LED water (14 jets, 2.2 kw)"
     }
   }
 }

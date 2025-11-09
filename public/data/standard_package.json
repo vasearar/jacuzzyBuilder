@@ -5,6 +5,12 @@
     "ru": { "title": "2 метра дымохода" },
     "en": { "title": "2 meters of chimney" }
   },
+  "round_steps": {
+    "image": "/standard_package/new_round_steps-1.webp",
+    "ro": { "title": "Trepte rotunde" },
+    "ru": { "title": "Круглые ступени" },
+    "en": { "title": "Round steps" }
+  },
   "mini_bar": {
     "image": "/standard_package/new_minibar.webp",
     "ro": { "title": "Mini-bar" },
@@ -13,20 +19,29 @@
   },
   "water_outlet": {
     "image": "/standard_package/new_drain.webp",
+    "icetube": true,
     "ro": { "title": "Ieșire de apă" },
     "ru": { "title": "Водяной выход" },
     "en": { "title": "Water outlet" }
   },
-  "thermometer": {
-    "image": "/standard_package/new_thermometer.webp",
-    "ro": { "title": "Termometru" },
-    "ru": { "title": "Термометр" },
-    "en": { "title": "Thermometer" }
+  "digital_thermometer": {
+    "images": "/other_accessories/digital_thermometer.webp",
+    "icetube": true,
+    "en": { "title": "Digital thermometer" },
+    "ro": { "title": "Termometru digital" },
+    "ru": { "title": "Цифровой термометр" }
   },
-  "regular_stairs": {
-    "image": "/standard_package/regular_stairs.jpg",
-    "ro": { "title": "Trepte obișnuite" },
-    "ru": { "title": "Обычные ступени" },
-    "en": { "title": "Regular stairs" }
+  "hot_tub_insulation": {
+    "images": "/other_accessories/new_insulation.webp",
+    "en": { "title": "Hot tub insulation" },
+    "ro": { "title": "Izolație cadă cu hidromasaj" },
+    "ru": { "title": "Изоляция купели" }
+  },
+  "standard_steps": {
+    "images": "/standard_package/regular_steps_1.jpg",
+    "icetube": true,
+    "en": { "title": "Standard steps" },
+    "ro": { "title": "Trepte standard" },
+    "ru": { "title": "Стандартные ступени" }
   }
 }

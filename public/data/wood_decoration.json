@@ -1,4 +1,16 @@
 {
+  "larch": {
+    "image": "/wood_decorations/larch.jpg",
+    "ro": {
+      "title": "Larice"
+    },
+    "ru": {
+      "title": "Лиственница"
+    },
+    "en": {
+      "title": "Larch"
+    }
+  },
   "spruce": {
     "image": "/wood_decorations/spruce.webp",
     "ro": {

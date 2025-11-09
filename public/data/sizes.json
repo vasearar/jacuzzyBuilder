@@ -18,5 +18,9 @@
   "220x220cm": {
     "title": "220x220 cm",
     "image": "/sizes/size_rectangular.webp"
+  },
+  "100cm": {
+    "title": "100 cm",
+    "image": "/sizes/size.jpg"
   }
 }

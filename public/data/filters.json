@@ -1,69 +1,62 @@
 {
   "filter": {
-    "price": "460",
+    "price": "400",
     "images": "/filters/filter1.webp",
     "en": { "title": "Filter" },
     "ro": { "title": "Filtru" },
     "ru": { "title": "Фильтр" }
   },
   "filter_uv": {
-    "price": "1000",
+    "price": "860",
     "images": "/filters/filter_uv_2.webp",
     "en": { "title": "Filter + UV lamp" },
     "ro": { "title": "Filtru + lampă UV" },
     "ru": { "title": "Фильтр + УФ-лампа" }
   },
   "filter_heater_3kw": {
-    "price": "1060",
+    "price": "900",
     "images": "/filters/filter_electric_3.webp",
     "en": { "title": "Filter + electric heater 3kw" },
     "ro": { "title": "Filtru + încălzitor electric 3kw" },
     "ru": { "title": "Фильтр + электрический нагреватель 3 кВт" }
   },
   "filter_heater_uv": {
-    "price": "1660",
+    "price": "1400",
     "images": "/filters/filter_electric_uv_4.webp",
     "en": { "title": "Filter + electric heater 3kw + UV lamp" },
     "ro": { "title": "Filtru + încălzitor electric 3kw + lampă UV" },
     "ru": { "title": "Фильтр + электрический нагреватель 3 кВт + УФ-лампа" }
   },
   "small_filter": {
-    "price": "300",
+    "price": "260",
     "images": "/filters/swim_fun-1.webp",
     "en": { "title": "Small filter" },
     "ro": { "title": "Filtru mic" },
     "ru": { "title": "Маленький фильтр" }
   },
   "filter_connections": {
-    "price": "160",
+    "price": "140",
     "images": "/filters/new_fastconnections.webp",
     "en": { "title": "Filter connections" },
     "ro": { "title": "Conexiuni filtru" },
     "ru": { "title": "Соединения фильтра" }
   },
   "filter_box_spruce": {
-    "price": "140",
+    "price": "180",
     "images": "/filters/filter_box_1.webp",
     "en": { "title": "Filter box - spruce" },
     "ro": { "title": "Cutie filtru - molid" },
     "ru": { "title": "Короб для фильтра - ель" }
   },
   "filter_box_other": {
-    "price": "180",
+    "price": "220",
     "images": "/filters/filter_box_1.webp",
     "en": { "title": "Filter box - other wood" },
     "ro": { "title": "Cutie filtru - alt lemn" },
     "ru": { "title": "Короб для фильтра - другое дерево" }
   },
-  "uv_lamp": {
-    "price": "860",
-    "images": "/filters/uv_lamp_1.webp",
-    "en": { "title": "UV lamp" },
-    "ro": { "title": "Lampă UV" },
-    "ru": { "title": "УФ-лампа" }
-  },
   "ozonator": {
-    "price": "110",
+    "price": "100",
     "images": "/filters/ozonator.webp",
     "en": { "title": "Ozonator" },
     "ro": { "title": "Ozonator" },

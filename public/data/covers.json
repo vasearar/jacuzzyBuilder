@@ -62,13 +62,13 @@
   "wooden_cover_thermo": {
     "images": "/covers/wooden_cover.jpg",
     "ro": {
-      "title": "Capac din lemn - termo/larice"
+      "title": "Capac din lemn - alt tip de lemn"
     },
     "ru": {
-      "title": "Деревянная крышка - термо/лиственница"
+      "title": "Деревянная крышка - другой вид дерева"
     },
     "en": {
-      "title": "Wooden cover - thermo/larch"
+      "title": "Wooden cover - other wood"
     }
   },
   "insulated_cover_black": {

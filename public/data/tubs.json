@@ -237,7 +237,6 @@
       { "electric_3": "660" },
       { "electric_6": "1060" },
       { "electric_3_gecko": "1020" },
-      { "electric_3_gecko_wifi": "1440" },
       { "wifi_module": "200" },
       { "touchpanel": "340" }
     ],

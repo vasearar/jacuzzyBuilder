@@ -36,10 +36,10 @@ const Configurator: React.FC = () => {
     standardPack,
   } = useCatalogs();
 
-  // Base selections
+  // ======== SELECTION STATE ========
   const [selTub, setSelTub] = useState<string | null>(null);
 
-  // Heaters: one main + multiple exception extras
+  // Heaters: one main + optional exception checkboxes
   const [selHeater, setSelHeater] = useState<string | null>(null);
   const [selHeaterExtras, setSelHeaterExtras] = useState<
     Record<string, number>
@@ -57,16 +57,16 @@ const Configurator: React.FC = () => {
   const [selStandard, setSelStandard] = useState<Record<string, number>>({});
 
   const tub = selTub ? tubs[selTub] : null;
-  const isIceTub = selTub === "ice_tub"; // IMPORTANT: correct key
+  const isIceTub = selTub === "ice_tub"; // IMPORTANT: exact key
 
-  // Per-tub mapped options
+  // ======== PER-TUB OPTION MAPS ========
   const tubHeaterOpts = useMemo(() => mapWithPrice(tub?.heaters), [tub]);
   const tubSizeOpts = useMemo(() => mapWithPrice(tub?.sizes), [tub]);
   const tubInsertOpts = useMemo(() => mapWithPrice(tub?.insert_colour), [tub]);
   const tubCoverOpts = useMemo(() => mapWithPrice(tub?.covers), [tub]);
   const tubWoodOpts = useMemo(() => mapWithPrice(tub?.wood_decorations), [tub]);
 
-  // Reset when tub changes
+  // ======== RESET WHEN TUB CHANGES ========
   React.useEffect(() => {
     setSelHeater(null);
     setSelHeaterExtras({});
@@ -78,28 +78,10 @@ const Configurator: React.FC = () => {
     setSelLED({});
     setSelFilters({});
     setSelOther({});
+    setSelStandard({}); // no preselects for standard package
   }, [selTub]);
 
-  // Standard package defaults depend on tub (Ice Tub vs others)
-  React.useEffect(() => {
-    const next: Record<string, number> = {};
-
-    if (isIceTub) {
-      // Only items with icetube: true
-      Object.entries(standardPack).forEach(([k, v]) => {
-        if ((v as any)?.icetube) next[k] = 1;
-      });
-    } else {
-      // All except standard_steps (that is only for Ice Tub)
-      Object.entries(standardPack).forEach(([k]) => {
-        if (k !== "standard_steps") next[k] = 1;
-      });
-    }
-
-    setSelStandard(next);
-  }, [isIceTub, standardPack]);
-
-  // Helper for multi-select
+  // ======== HELPERS ========
   const toggleFrom =
     (setter: React.Dispatch<React.SetStateAction<Record<string, number>>>) =>
     (k: string, qty: number) =>
@@ -110,16 +92,16 @@ const Configurator: React.FC = () => {
         return next;
       });
 
-  // ===== ICE TUB VISIBILITY RULES =====
+  // ======== PROGRESSIVE REVEAL ========
+  // Phase 1: only tubs
+  // Phase 2: (after tub) heaters
+  // Phase 3: (after main heater) everything else
+  const showHeaters = !!selTub;
+  const showRest = !!selHeater || Object.keys(selHeaterExtras).length > 0;
 
-  // Spa systems:
-  // - Ice Tub: nothing
-  // - Others: all
+  // ======== ICE TUB VISIBILITY ========
   const spaList = isIceTub ? [] : Object.keys(spaSystems);
 
-  // LED lights:
-  // - Ice Tub: only icetube: true
-  // - Others: all
   const ledList = Object.keys(ledLights).filter((k) => {
     const v: any = ledLights[k];
     if (!v) return false;
@@ -127,9 +109,6 @@ const Configurator: React.FC = () => {
     return true;
   });
 
-  // Other accessories:
-  // - Ice Tub: only icetube: true
-  // - Others: all
   const otherList = Object.keys(otherAcc).filter((k) => {
     const v: any = otherAcc[k];
     if (!v) return false;
@@ -137,18 +116,15 @@ const Configurator: React.FC = () => {
     return true;
   });
 
-  // Standard package:
-  // - Ice Tub: only icetube: true
-  // - Others: all except standard_steps
   const standardList = Object.keys(standardPack).filter((k) => {
     const v: any = standardPack[k];
     if (!v) return false;
     if (isIceTub) return !!v.icetube;
-    if (k === "standard_steps") return false;
+    if (k === "standard_steps") return false; // only for Ice Tub
     return true;
   });
 
-  // Clamp selected standard items to visible ones
+  // Clamp any pre-existing standard selections to what's visible
   const standardSelectedForUI: Record<string, number> = {};
   Object.entries(selStandard).forEach(([k, q]) => {
     if (q > 0 && standardList.includes(k)) {
@@ -156,9 +132,7 @@ const Configurator: React.FC = () => {
     }
   });
 
-  // ===== HEATER SELECTION (main + exception checkboxes) =====
-
-  // Build combined selection map for OptionGrid visual state
+  // ======== HEATER BEHAVIOR (MAIN RADIO + EXCEPTION CHECKBOXES) ========
   const heaterSelectedForUI: Record<string, number> = {};
   if (selHeater) heaterSelectedForUI[selHeater] = 1;
   Object.entries(selHeaterExtras).forEach(([k, q]) => {
@@ -170,20 +144,17 @@ const Configurator: React.FC = () => {
     if (!item) return;
 
     if (item.exception) {
-      // Checkbox-style behavior for exception heaters
+      // checkbox-style toggle
       setSelHeaterExtras((prev) => {
         const next = { ...prev };
-        if (next[key]) {
-          delete next[key];
-        } else {
-          next[key] = 1;
-        }
+        if (next[key]) delete next[key];
+        else next[key] = 1;
         return next;
       });
     } else {
-      // Radio behavior for normal heaters
+      // radio behavior for main heater
       setSelHeater((prev) => (prev === key ? null : key));
-      // Ensure it's not also in extras
+      // ensure not in extras
       setSelHeaterExtras((prev) => {
         const next = { ...prev };
         delete next[key];
@@ -192,8 +163,7 @@ const Configurator: React.FC = () => {
     }
   };
 
-  // ===== TOTAL PRICE =====
-
+  // ======== TOTAL PRICE ========
   const total = useMemo(() => {
     if (!tub) return 0;
     let sum = safeNum(tub.price);
@@ -209,24 +179,16 @@ const Configurator: React.FC = () => {
       if (Array.isArray(chosen)) {
         return chosen.reduce((a, k) => a + (map[k] || 0), 0);
       }
-
       return Object.entries(chosen).reduce(
         (a, [k, q]) => a + (map[k] || 0) * q,
         0
       );
     };
 
-    // Main heater
-    if (selHeater) {
-      sum += addFrom(tubHeaterOpts, [selHeater]);
-    }
-
-    // Exception heaters (checkboxes)
-    if (Object.keys(selHeaterExtras).length) {
+    if (selHeater) sum += addFrom(tubHeaterOpts, [selHeater]);
+    if (Object.keys(selHeaterExtras).length)
       sum += addFrom(tubHeaterOpts, selHeaterExtras);
-    }
 
-    // Other per-tub choices
     if (selSize) sum += addFrom(tubSizeOpts, [selSize]);
     if (selInsertColor) sum += addFrom(tubInsertOpts, [selInsertColor]);
     if (selWoodDecor) sum += addFrom(tubWoodOpts, [selWoodDecor]);
@@ -241,12 +203,10 @@ const Configurator: React.FC = () => {
         0
       );
 
-    // Only visible/valid selections get non-zero state because we clear on tub change
     sum += addFromCatalog(spaSystems, selSpa);
     sum += addFromCatalog(ledLights, selLED);
     sum += addFromCatalog(filters, selFilters);
     sum += addFromCatalog(otherAcc, selOther);
-    // standardPack is priceMode "free" (no charge), negative-priced "no_steps" is in otherAcc
 
     return sum;
   }, [
@@ -272,8 +232,7 @@ const Configurator: React.FC = () => {
     selOther,
   ]);
 
-  // ===== SUMMARY ROWS =====
-
+  // ======== SUMMARY ROWS ========
   const rows: SelRow[] = useMemo(() => {
     const r: SelRow[] = [];
 
@@ -314,13 +273,12 @@ const Configurator: React.FC = () => {
       r.push({
         label: t("hot_tub_model"),
         text: loc?.selected_text || loc?.title || "",
-        price: safeNum(tub.price),
+        price: safeNum(tub.price), // show tub price in summary/docs
       });
     }
 
-    // Main heater
+    // Heaters: main + extras
     pushSingle("heater", selHeater, heaters, tubHeaterOpts);
-    // Exception heaters
     pushMulti("heater", selHeaterExtras, heaters, tubHeaterOpts);
 
     pushSingle("size", selSize, sizes, tubSizeOpts);
@@ -367,8 +325,7 @@ const Configurator: React.FC = () => {
     tubCoverOpts,
   ]);
 
-  // ===== RENDER =====
-
+  // ======== RENDER ========
   return (
     <div className="grid grid-cols-full min-h-screen">
       <div className="col-span-12">
@@ -378,7 +335,7 @@ const Configurator: React.FC = () => {
       </div>
 
       <div className="col-span-12 lg:col-span-8 w-full p-2 lg:p-6">
-        {/* HOT TUB MODEL */}
+        {/* PHASE 1: TUBS ONLY */}
         <OptionGrid
           heading={t("hot_tub_model")}
           list={Object.keys(tubs)}
@@ -391,141 +348,141 @@ const Configurator: React.FC = () => {
           variant="main"
         />
 
-        {/* HEATERS: one main (radio) + exception: true as checkboxes */}
-        <OptionGrid
-          heading={t("heater")}
-          hint={!tub ? t("please_select_tub_first") : undefined}
-          list={tub ? tubHeaterOpts : []}
-          catalog={heaters}
-          lang={uiLang}
-          // use multi mode and manage behavior manually
-          single={false}
-          selectedMulti={heaterSelectedForUI}
-          onToggleMulti={(k) => handleHeaterToggle(k)}
-          priceMode="perTub"
-          variant="main"
-        />
+        {/* PHASE 2: HEATERS (visible only after tub chosen) */}
+        {showHeaters && (
+          <OptionGrid
+            heading={t("heater")}
+            hint={!tub ? t("please_select_tub_first") : undefined}
+            list={tub ? tubHeaterOpts : []}
+            catalog={heaters}
+            lang={uiLang}
+            // multi mode to support extras + main; we control behavior in onToggleMulti
+            single={false}
+            selectedMulti={heaterSelectedForUI}
+            onToggleMulti={(k) => handleHeaterToggle(k)}
+            priceMode="perTub"
+            variant="main"
+          />
+        )}
 
-        {/* SIZE */}
-        <OptionGrid
-          heading={t("size")}
-          hint={!tub ? t("please_select_tub_first") : undefined}
-          list={tub ? tubSizeOpts : []}
-          catalog={sizes}
-          lang={uiLang}
-          single
-          selectedSingle={selSize}
-          onSelectSingle={setSelSize}
-          priceMode="perTub"
-          variant="main"
-        />
+        {/* PHASE 3: EVERYTHING ELSE (visible only after main heater chosen) */}
+        {showRest && (
+          <>
+            <OptionGrid
+              heading={t("size")}
+              hint={!tub ? t("please_select_tub_first") : undefined}
+              list={tub ? tubSizeOpts : []}
+              catalog={sizes}
+              lang={uiLang}
+              single
+              selectedSingle={selSize}
+              onSelectSingle={setSelSize}
+              priceMode="perTub"
+              variant="main"
+            />
 
-        {/* INSERT COLOUR */}
-        <OptionGrid
-          heading={t("insert_colour")}
-          hint={!tub ? t("please_select_tub_first") : undefined}
-          list={tub ? tubInsertOpts : []}
-          catalog={insertColors}
-          lang={uiLang}
-          single
-          selectedSingle={selInsertColor}
-          onSelectSingle={setSelInsertColor}
-          priceMode="perTub"
-          variant="main"
-        />
+            <OptionGrid
+              heading={t("insert_colour")}
+              hint={!tub ? t("please_select_tub_first") : undefined}
+              list={tub ? tubInsertOpts : []}
+              catalog={insertColors}
+              lang={uiLang}
+              single
+              selectedSingle={selInsertColor}
+              onSelectSingle={setSelInsertColor}
+              priceMode="perTub"
+              variant="main"
+            />
 
-        {/* WOOD DECORATION */}
-        <OptionGrid
-          heading={t("wood_decoration")}
-          hint={!tub ? t("please_select_tub_first") : undefined}
-          list={tub ? tubWoodOpts : []}
-          catalog={woodDecor}
-          lang={uiLang}
-          single
-          selectedSingle={selWoodDecor}
-          onSelectSingle={setSelWoodDecor}
-          priceMode="perTub"
-          variant="main"
-        />
+            <OptionGrid
+              heading={t("wood_decoration")}
+              hint={!tub ? t("please_select_tub_first") : undefined}
+              list={tub ? tubWoodOpts : []}
+              catalog={woodDecor}
+              lang={uiLang}
+              single
+              selectedSingle={selWoodDecor}
+              onSelectSingle={setSelWoodDecor}
+              priceMode="perTub"
+              variant="main"
+            />
 
-        {/* STANDARD PACKAGE (Ice Tub aware) */}
-        <OptionGrid
-          heading={t("standard_package")}
-          list={standardList}
-          catalog={standardPack}
-          lang={uiLang}
-          selectedMulti={standardSelectedForUI}
-          onToggleMulti={toggleFrom(setSelStandard)}
-          priceMode="free"
-          variant="main"
-        />
+            <OptionGrid
+              heading={t("standard_package")}
+              list={standardList}
+              catalog={standardPack}
+              lang={uiLang}
+              selectedMulti={standardSelectedForUI}
+              onToggleMulti={toggleFrom(setSelStandard)}
+              priceMode="free"
+              variant="main"
+            />
 
-        <h2 className="w-full bg-[#6c5f5b] mb-4 text-white rounded-[3px] text-[22px] p-[5px] font-medium text-center">
-          {t("other_accessories")}
-        </h2>
+            <h2 className="w-full bg-[#6c5f5b] mb-4 text-white rounded-[3px] text-[22px] p-[5px] font-medium text-center">
+              {t("other_accessories")}
+            </h2>
 
-        {/* SPA SYSTEMS (hidden for Ice Tub) */}
-        <OptionGrid
-          heading={t("spa_systems")}
-          list={spaList}
-          catalog={spaSystems}
-          lang={uiLang}
-          selectedMulti={selSpa}
-          onToggleMulti={toggleFrom(setSelSpa)}
-          priceMode="catalog"
-          variant="sub"
-        />
+            <OptionGrid
+              heading={t("spa_systems")}
+              list={spaList}
+              catalog={spaSystems}
+              lang={uiLang}
+              selectedMulti={selSpa}
+              onToggleMulti={toggleFrom(setSelSpa)}
+              priceMode="catalog"
+              variant="sub"
+            />
 
-        {/* LED LIGHTS (Ice Tub: only icetube:true) */}
-        <OptionGrid
-          heading={t("led_lights")}
-          list={ledList}
-          catalog={ledLights}
-          lang={uiLang}
-          selectedMulti={selLED}
-          onToggleMulti={toggleFrom(setSelLED)}
-          priceMode="catalog"
-          variant="sub"
-        />
+            <OptionGrid
+              heading={t("led_lights")}
+              list={ledList}
+              catalog={ledLights}
+              lang={uiLang}
+              selectedMulti={selLED}
+              onToggleMulti={toggleFrom(setSelLED)}
+              priceMode="catalog"
+              variant="sub"
+            />
 
-        {/* COVERS (per tub) */}
-        <OptionGrid
-          heading={t("covers")}
-          hint={!tub ? t("please_select_tub_first") : undefined}
-          list={tub ? tubCoverOpts : []}
-          catalog={covers}
-          lang={uiLang}
-          selectedMulti={selCovers}
-          onToggleMulti={toggleFrom(setSelCovers)}
-          priceMode="perTub"
-          variant="sub"
-        />
+            <OptionGrid
+              heading={t("covers")}
+              hint={!tub ? t("please_select_tub_first") : undefined}
+              list={tub ? tubCoverOpts : []}
+              catalog={covers}
+              lang={uiLang}
+              selectedMulti={selCovers}
+              onToggleMulti={toggleFrom(setSelCovers)}
+              priceMode="perTub"
+              variant="sub"
+            />
 
-        {/* FILTERS with acrylic_jacuzzi exception */}
-        <OptionGrid
-          heading={t("filters")}
-          list={Object.keys(filters).filter(
-            (key) => !(selTub === "acrylic_jacuzzi" && key === "small_filter")
-          )}
-          catalog={filters}
-          lang={uiLang}
-          selectedMulti={selFilters}
-          onToggleMulti={toggleFrom(setSelFilters)}
-          priceMode="catalog"
-          variant="sub"
-        />
+            {/* acrylic_jacuzzi filter exception */}
+            <OptionGrid
+              heading={t("filters")}
+              list={Object.keys(filters).filter(
+                (key) =>
+                  !(selTub === "acrylic_jacuzzi" && key === "small_filter")
+              )}
+              catalog={filters}
+              lang={uiLang}
+              selectedMulti={selFilters}
+              onToggleMulti={toggleFrom(setSelFilters)}
+              priceMode="catalog"
+              variant="sub"
+            />
 
-        {/* OTHER ACCESSORIES (Ice Tub: only icetube:true) */}
-        <OptionGrid
-          heading={t("other_accessories")}
-          list={otherList}
-          catalog={otherAcc}
-          lang={uiLang}
-          selectedMulti={selOther}
-          onToggleMulti={toggleFrom(setSelOther)}
-          priceMode="catalog"
-          variant="sub"
-        />
+            <OptionGrid
+              heading={t("other_accessories")}
+              list={otherList}
+              catalog={otherAcc}
+              lang={uiLang}
+              selectedMulti={selOther}
+              onToggleMulti={toggleFrom(setSelOther)}
+              priceMode="catalog"
+              variant="sub"
+            />
+          </>
+        )}
       </div>
 
       <StickySummary

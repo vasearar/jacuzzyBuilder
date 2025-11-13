@@ -1,8 +1,8 @@
 const Phone = () => {
   return (
     <svg
-      width="22"
-      height="21"
+      width="16"
+      height="16"
       viewBox="0 0 25 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

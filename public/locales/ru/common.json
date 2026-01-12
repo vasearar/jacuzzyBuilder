@@ -43,6 +43,27 @@
     "doc.table.qty": "Кол-во",
     "doc.table.unit": "Цена за ед.",
     "doc.table.lineTotal": "Сумма",
-    "orderText.totalLabel": "Итого"
+    "orderText.totalLabel": "Итого",
+    "configurator_login_title": "Вход",
+    "password": "Пароль",
+    "enter": "Войти",
+    "wrong_password": "Неверный пароль",
+    "nav.home": "Главная",
+    "nav.configurator": "Конфигуратор",
+    "nav.configurator_short": "Конфиг",
+    "catalog_title": "Каталог 2026",
+    "contact_us_title": "Свяжитесь с нами",
+    "contact_form.name": "Имя",
+    "contact_form.name_placeholder": "Ваше имя",
+    "contact_form.email": "Эл. почта",
+    "contact_form.email_placeholder": "vash@email.com",
+    "contact_form.telephone": "Телефон",
+    "contact_form.telephone_placeholder": "+373 60 000 000",
+    "contact_form.message": "Сообщение",
+    "contact_form.message_placeholder": "Ваше сообщение...",
+    "contact_form.send": "Отправить",
+    "contact_form.sending": "Отправка...",
+    "contact_form.success": "Сообщение успешно отправлено!",
+    "contact_form.error": "Не удалось отправить сообщение. Пожалуйста, попробуйте снова."
   }
 }

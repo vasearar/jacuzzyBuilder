@@ -43,6 +43,27 @@
     "doc.table.qty": "Cant.",
     "doc.table.unit": "Preț unitar",
     "doc.table.lineTotal": "Total linie",
-    "orderText.totalLabel": "Total"
+    "orderText.totalLabel": "Total",
+    "configurator_login_title": "Autentificare",
+    "password": "Parolă",
+    "enter": "Intră",
+    "wrong_password": "Parolă greșită",
+    "nav.home": "Acasă",
+    "nav.configurator": "Configurator",
+    "nav.configurator_short": "Config",
+    "catalog_title": "Catalog 2026",
+    "contact_us_title": "Contactați-ne",
+    "contact_form.name": "Nume",
+    "contact_form.name_placeholder": "Numele dvs.",
+    "contact_form.email": "E-mail",
+    "contact_form.email_placeholder": "dvs@email.com",
+    "contact_form.telephone": "Telefon",
+    "contact_form.telephone_placeholder": "+373 60 000 000",
+    "contact_form.message": "Mesaj",
+    "contact_form.message_placeholder": "Mesajul dvs...",
+    "contact_form.send": "Trimite",
+    "contact_form.sending": "Se trimite...",
+    "contact_form.success": "Mesajul a fost trimis cu succes!",
+    "contact_form.error": "Trimiterea mesajului a eșuat. Vă rugăm să încercați din nou."
   }
 }

@@ -93,7 +93,7 @@ export const StickySummary: React.FC<StickySummaryProps> = ({
           to_email: emailConfig.companyEmail,
           from_email: email,
           phone,
-          notes,
+          notes: notes || "-",
           order_text: orderText,
           total_text: formatMoney(total),
         },
@@ -259,12 +259,15 @@ export const StickySummary: React.FC<StickySummaryProps> = ({
   return (
     <aside className="col-span-12 lg:col-span-4 w-full lg:sticky lg:top-24 h-fit lg:mb-6">
       <p className="flex gap-2 font-bold items-center">
+        office@nordstern.md
+      </p>
+      <p className="flex gap-2 font-bold items-center">
         <Phone />
-        +373 69 195 884
+        +373 69 121 940
       </p>
       <p className="flex gap-2 mb-3 font-bold items-center">
         <Phone />
-        +373 69 121 940
+        +373 69 195 884
       </p>
       <div className="border rounded-xl small-shadow p-6">
         <h2 className="font-medium text-[28px] mb-4">{title}</h2>

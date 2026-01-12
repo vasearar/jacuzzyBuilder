@@ -43,6 +43,27 @@
     "doc.table.qty": "Qty",
     "doc.table.unit": "Unit",
     "doc.table.lineTotal": "Line total",
-    "orderText.totalLabel": "Total"
+    "orderText.totalLabel": "Total",
+    "configurator_login_title": "Configurator",
+    "password": "Password",
+    "enter": "Enter",
+    "wrong_password": "Wrong password",
+    "nav.home": "Home",
+    "nav.configurator": "Configurator",
+    "nav.configurator_short": "Config",
+    "catalog_title": "Catalog 2026",
+    "contact_us_title": "Contact Us",
+    "contact_form.name": "Name",
+    "contact_form.name_placeholder": "Your name",
+    "contact_form.email": "Email",
+    "contact_form.email_placeholder": "your@email.com",
+    "contact_form.telephone": "Telephone",
+    "contact_form.telephone_placeholder": "+373 60 000 000",
+    "contact_form.message": "Message",
+    "contact_form.message_placeholder": "Your message...",
+    "contact_form.send": "Send",
+    "contact_form.sending": "Sending...",
+    "contact_form.success": "Message sent successfully!",
+    "contact_form.error": "Failed to send message. Please try again."
   }
 }

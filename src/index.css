@@ -38,4 +38,16 @@ body{
     padding: 0 1rem;
     margin: 0 auto;
   }
+  
+  /* Fix PDF zoom on mobile Safari */
+  .pdf-viewer-container {
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .pdf-viewer-container iframe {
+    width: 100%;
+    min-width: 100%;
+  }
 }

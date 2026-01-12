@@ -89,13 +89,17 @@ const Home: React.FC = () => {
                 {t("catalog_mobile_hint")}
               </p>
             </div>
-            {/* Responsive PDF iframe */}
-            <div className="relative w-full" style={{ minHeight: "400px" }}>
+            {/* Responsive PDF viewer */}
+            <div className="pdf-viewer-container w-full bg-gray-100 rounded-b-lg">
               <iframe
-                src="/data/Catalog_2026_Nordstern.pdf#toolbar=1&zoom=page-width"
-                className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] border-0"
+                src="/data/Catalog_2026_Nordstern.pdf#toolbar=1&view=Fit"
+                className="w-full border-0"
+                style={{
+                  height: "500px",
+                  minHeight: "500px"
+                }}
                 title={t("catalog_title")}
-                style={{ maxWidth: "100%" }}
+                allowFullScreen
               />
             </div>
           </div>

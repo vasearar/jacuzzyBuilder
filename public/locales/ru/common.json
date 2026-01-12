@@ -54,6 +54,7 @@
     "catalog_title": "Каталог 2026",
     "catalog_download": "Скачать каталог",
     "catalog_mobile_hint": "Для лучшего просмотра на мобильном устройстве скачайте PDF",
+    "catalog_load_error": "Не удалось отобразить PDF.",
     "contact_us_title": "Свяжитесь с нами",
     "contact_form.name": "Имя",
     "contact_form.name_placeholder": "Ваше имя",

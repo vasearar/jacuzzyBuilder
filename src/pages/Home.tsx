@@ -91,13 +91,34 @@ const Home: React.FC = () => {
             </div>
             {/* Responsive PDF viewer */}
             <div className="pdf-viewer-container w-full bg-gray-100 rounded-b-lg">
-              <iframe
-                src="/data/Catalog_2026_Nordstern.pdf#toolbar=1&view=Fit"
-                className="w-full border-0"
+              {/* Mobile - use object tag with FitH for iOS Safari */}
+              <object
+                data="/data/Catalog_2026_Nordstern.pdf#toolbar=1&view=FitH"
+                type="application/pdf"
+                className="w-full border-0 md:hidden"
                 style={{
                   height: "500px",
-                  minHeight: "500px"
+                  minHeight: "500px",
+                  display: "block"
                 }}
+                aria-label={t("catalog_title")}
+              >
+                <p className="p-4 text-center text-gray-600">
+                  {t("catalog_load_error")}
+                  <a
+                    href="/data/Catalog_2026_Nordstern.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline ml-2"
+                  >
+                    {t("catalog_download")}
+                  </a>
+                </p>
+              </object>
+              {/* Desktop - use iframe with original height */}
+              <iframe
+                src="/data/Catalog_2026_Nordstern.pdf#toolbar=1"
+                className="hidden md:block w-full border-0 h-[600px] lg:h-[800px]"
                 title={t("catalog_title")}
                 allowFullScreen
               />

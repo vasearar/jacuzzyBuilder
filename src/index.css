@@ -46,6 +46,7 @@ body{
     -webkit-overflow-scrolling: touch;
   }
   
+  .pdf-viewer-container object,
   .pdf-viewer-container iframe {
     width: 100%;
     min-width: 100%;

@@ -98,8 +98,7 @@ const Home: React.FC = () => {
                 className="w-full border-0 md:hidden"
                 style={{
                   height: "500px",
-                  minHeight: "500px",
-                  display: "block"
+                  minHeight: "500px"
                 }}
                 aria-label={t("catalog_title")}
               >

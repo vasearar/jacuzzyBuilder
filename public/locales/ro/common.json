@@ -52,6 +52,8 @@
     "nav.configurator": "Configurator",
     "nav.configurator_short": "Config",
     "catalog_title": "Catalog 2026",
+    "catalog_download": "Descarcă Catalogul",
+    "catalog_mobile_hint": "Pentru o vizualizare mai bună pe mobil, descarcă PDF-ul",
     "contact_us_title": "Contactați-ne",
     "contact_form.name": "Nume",
     "contact_form.name_placeholder": "Numele dvs.",

@@ -71,15 +71,33 @@ const Home: React.FC = () => {
       <div className="container mx-auto px-4 py-8">
         {/* PDF Viewer Section */}
         <div className="mb-12">
-          <h2 className="text-3xl font-medium mb-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-medium mb-6 text-center">
             {t("catalog_title")}
           </h2>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <iframe
-              src="/data/Catalog_2026_Nordstern.pdf#toolbar=1"
-              className="w-full h-[800px] border-0"
-              title={t("catalog_title")}
-            />
+            {/* Download link for better mobile experience */}
+            <div className="p-4 text-center border-b bg-gray-50">
+              <a
+                href="/data/Catalog_2026_Nordstern.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-[#202020] text-white rounded-lg hover:opacity-90 transition-opacity text-sm md:text-base"
+              >
+                {t("catalog_download")}
+              </a>
+              <p className="mt-2 text-xs md:text-sm text-gray-600">
+                {t("catalog_mobile_hint")}
+              </p>
+            </div>
+            {/* Responsive PDF iframe */}
+            <div className="relative w-full" style={{ minHeight: "400px" }}>
+              <iframe
+                src="/data/Catalog_2026_Nordstern.pdf#toolbar=1&zoom=page-width"
+                className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] border-0"
+                title={t("catalog_title")}
+                style={{ maxWidth: "100%" }}
+              />
+            </div>
           </div>
         </div>
 
